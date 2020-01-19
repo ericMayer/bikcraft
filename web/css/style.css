@@ -1,0 +1,239 @@
+/* Esses padrões serão usados em todo o design, por isso a alteração e feita diretamente na tag*/
+
+/* Classes gerais */
+
+body { /* colocado a fonte mais utilizada como padrão no body */
+	font-family: Arial, Helvetica, sans-serif; /* caso não tiver uma fonte, bucas a outra na máquina */
+}
+
+p { /* padrão dos parágrafos usados no site */ 
+	font-family: Georgia, "Times New Roman", serif; /* caso não tiver uma fonte, bucas a outra na máquina */
+	color: #fff;
+	font-size: 14px;
+	line-height: 20px;
+
+}
+
+h1 { /* padrão utilizado nos títulos h1 do site */
+	font-size: 48px;
+	/* line-height: 60px; */
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #fff;
+}
+
+cite { /* padrão do estilo das citações do site */
+	font-size: 14px;
+	line-height: 20px;
+	text-transform: uppercase;
+	font-style: normal;
+	font-weight: bold;
+	letter-spacing: .1em; /* espaçamento entre as letras */
+	color: #fff;
+}
+
+.button { /*configuração padrão do botão que será usado no site */
+	border: 4px solid #fec63e; /* necessário definir o tipo da borda solida, pontilhada, etc, se não definir a borda não aparece */
+	padding: 10px 30px; /* espaçamento do texto até a borda, isso irá aumentar o tamanho do botão ao tamanho ideal */
+	color: #fec63e;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: .1em; /* espaçamento entre as letras padrão que será usado no site em títulos, botão, e nomes */	
+}
+
+.button:hover { /* quando passar o mouse por cima */
+	color: #fff;
+	border-color: #fff;
+}
+
+.button.button_preto:hover {
+	color: #000;
+	border-color: #000;
+
+}
+
+.sub_titulo {
+	font-size: 24px;
+	line-height: 30px;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 40px;
+}
+
+.sub_titulo:after {
+	content: ""; /*necessário, pois é isso que irá permitir exibir o espaçador na tela, sem ele não apareceria o conteúdo*/
+	display: block; /* necessário para que seja realizado a quebra de linha igual o block da div */
+	width: 60px; 
+	height: 3px; 
+	background: #000; /* necessário usar o background para definir a cor por se tratar de uma caixa */
+	margin: 5px auto; /* margem e alinhando ao centro com o auto*/
+}
+
+/* Fim das classes gerais */
+
+/* header */
+
+.cabecalho {
+	position: fixed; /* fica fixo na tela */
+	top: 0; /* fica sempre no topo da página */
+	width: 100%;
+	background-color: #fec63e; /* amarelo */
+	padding: 5px 0;
+	z-index: 10; /* posiciona esse elemento acima de tudo, necessário, pois têm vários elementos que têm position depois do cabeçalho */
+}
+
+.menu {
+	text-align: right;
+}
+
+.menu ul li {
+	display: inline-block; /* ele ocupa todo o espaço e mantém os elementos uma ao lado do outro, porém quebra a linha quandoa acaba o espaço*/
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.menu ul li a {
+	font-size: 14px;
+	font-weight: bold; /* negrito */
+	text-transform: uppercase; /* transforma texto todo em maíusculo */
+	color: #000;
+	padding: 10px 0; /* espaço de seleção do menu de cada item */
+	letter-spacing: .1em; /* espaçamento entre as letras */
+	line-height: 20px; /* altura da linha distância de um texto para o texto debaixo*/
+}
+
+.menu ul li a:hover { /* quando passa o mouse por cima */
+	color: #fff;
+}
+
+/* Fim header */
+
+/* Introdução */
+
+
+.introducao {
+	width: 100%;
+	height: 380px;
+	/* padding: 150px 0; */
+	margin-top: 76px; /* margem de topo extamente do tamanho do header para separar os conteúdos, necessário pq o header está fixo */
+	background: url("../img/bg-home.jpg") no-repeat center; /* imagem de fundo que não se repete e alinhada ao centro */
+	background-size: cover; /* cobre toda a área de fundo sendo redimensionada a imagem para ter o menor tamanho
+								serviria para reajustar a imagem caso estivesse em um tamanho maior, porém a imagem já está no tamanho ideal */
+	text-align: center;
+	padding-top: 120px;
+
+}
+
+.introducao .button {
+	display: inline-block; /* colocando para poder quebrar linha, pois a tag a, por padrão é inline */
+	margin-top: 40px;
+}
+
+
+.citacao-externa {
+	max-width: 260px; /* o conteúdo não passa desse tamanho*/
+	margin: 0 auto; /* alinhado ao centro utilizando margim 0 auto, pois não aceita alinha texto ao centro depois de usar o max-width */
+	/*margin-bottom: 40px;*/
+}
+
+.citacao-externa p:before, .citacao-externa p:after { /* será utilizado o after e o before para criar os espaçadores do site, essas pseudo classes before e after criam os elemento inline por padrão */
+	content: ""; /*necessário, pois é isso que irá permitir exibir o espaçador na tela, sem ele não apareceria o conteúdo*/
+	display: block; /* necessário para que seja realizado a quebra de linha igual o block da div */
+	width: 60px;
+	height: 3px;
+	background: #fff; /* necessário usar o background para definir a cor por se tratar de uma caixa */
+	margin: 10px auto; /* alinhando ao centro com o auto*/
+}
+
+/* Fim Introdução */
+
+/* Produtos */
+
+.produtos {
+	padding-top: 60px;
+	text-align: center; /* alinhando tudo da section produtos ao centro */
+}
+
+.produtos_lista li {
+	background: #fec63e; /* cor de fundo amarelo */
+}
+
+.icone {
+	background-color: #000; /* cor de fundo preta*/
+	padding: 30px; /* preenchimento de todos os lados em cima, direita, baixo e esquerda */
+}
+
+.produtos_lista li h3 {
+	font-size: 18px;
+	line-height: 25px;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #000;
+	margin-top: 10px;
+}
+
+.produtos_lista li h3:after {
+	content: ""; /*necessário, pois é isso que irá permitir exibir o espaçador na tela, sem ele não apareceria o conteúdo*/
+	display: block; /* necessário para que seja realizado a quebra de linha igual o block da div */
+	width: 60px; 
+	height: 3px; 
+	background: #000; /* necessário usar o background para definir a cor por se tratar de uma caixa */
+	margin: 3px auto; /* margem e alinhando ao centro com o auto do espaçador*/
+}
+
+.produtos_lista li p {
+	color: #000; /* alterando a cor para preto, pois em classes gerais está definido como padrão para cor branca todo p */
+	padding: 10px 20px 20px 20px;
+}
+
+.acao p {
+	color: #000;
+	font-size: 14px;
+	line-height: 20px;
+	margin-bottom: 20px;
+}
+
+.acao {
+	clear: both; /* as caixas que estão flutuando a esquerda foram limpadas a propriedade de flutuar, para conseguir fazer a quebra de linha */
+	margin-top: 40px;
+	margin-bottom: 60px;
+	display: inline-block; /* colocando para poder quebrar linha, pois a tag a, por padrão é inline  */
+}
+
+/* Fim Produtos */
+
+/* Portfólio */
+
+.portfolio {
+	width: 100%;
+	background-color: #000;
+	text-align: center;
+	padding-top: 40px;
+}
+
+.portfolio .sub_titulo {
+	color: #fec63e;
+}
+
+.portfolio .sub_titulo:after {
+	background: #fec63e; /* necessário usar o background para definir a cor por se tratar de uma caixa */
+}
+
+.portfolio .acao p {
+	color: #fff;
+}
+
+.portfolio .acao { /* alterando a margi */
+	margin-top: 40px;
+	margin-bottom: 53px;
+}
+
+.portfolio_lista li:last-child {
+	margin-top: 20px;
+}
+
+/* Fim do portfólio */
