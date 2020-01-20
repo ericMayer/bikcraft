@@ -72,6 +72,10 @@ cite { /* padrão do estilo das citações do site */
 	margin: 5px auto; /* margem e alinhando ao centro com o auto*/
 }
 
+img {
+	display: block; /* por padrão as imagens são um pouco maior que seu tamanho original, pois têm um tamanho a mais na borda */
+}
+
 /* Fim das classes gerais */
 
 /* header */
@@ -118,7 +122,7 @@ cite { /* padrão do estilo das citações do site */
 	width: 100%;
 	height: 380px;
 	/* padding: 150px 0; */
-	margin-top: 76px; /* margem de topo extamente do tamanho do header para separar os conteúdos, necessário pq o header está fixo */
+	margin-top: 72px; /* margem de topo extamente do tamanho do header para separar os conteúdos, necessário pq o header está fixo */
 	background: url("../img/bg-home.jpg") no-repeat center; /* imagem de fundo que não se repete e alinhada ao centro */
 	background-size: cover; /* cobre toda a área de fundo sendo redimensionada a imagem para ter o menor tamanho
 								serviria para reajustar a imagem caso estivesse em um tamanho maior, porém a imagem já está no tamanho ideal */
@@ -237,3 +241,63 @@ cite { /* padrão do estilo das citações do site */
 }
 
 /* Fim do portfólio */
+
+/* Qualidade */
+
+.qualidade {
+	text-align: center;
+	padding: 60px 0;	
+}
+
+.qualidade:after { /* será adicionado a imagem das linhas */
+	content: ""; /* todo pseudo elemento after, precisa ter um conteúdo */
+	display: block; /* elemento com quebra de linha */
+	width: 620px;
+	height: 83px;
+	background: url(../img/lines.png) no-repeat center;
+	position: absolute; /* é absoluto ao container que está definido como relativa, por isso que ele fica só na parte de qualidade, 
+	se o container não estiver como relative */
+	top: 205px;
+	right: 169px;
+	z-index: -1; /* sempre irá ficar por trás de todos os elementos da tela */
+}
+
+.qualidade_lista {
+	padding-top: 20px;
+}
+
+.qualidade img {
+	margin: 0 auto; /* para centralizar a imagem */
+}
+
+.qualidade_lista li {
+	padding: 0 40px;
+}
+
+.qualidade_lista li h3 {
+	font-size: 18px;
+	line-height: 25px;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #000;
+	margin-top: 10px;
+}
+
+.qualidade_lista li h3:after {
+	content: ""; /*necessário, pois é isso que irá permitir exibir o espaçador na tela, sem ele não apareceria o conteúdo*/
+	display: block; /* necessário para que seja realizado a quebra de linha igual o block da div */
+	width: 60px; 
+	height: 3px; 
+	background: #000; /* necessário usar o background para definir a cor por se tratar de uma caixa */
+	margin: 6px auto; /* margem e alinhando ao centro com o auto do espaçador*/
+}
+
+.qualidade_lista p {
+	color: #000;
+}
+
+
+
+
+/* Fim Qualidade */
