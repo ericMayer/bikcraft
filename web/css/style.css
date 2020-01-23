@@ -72,6 +72,24 @@ cite { /* padrão do estilo das citações do site */
 	margin: 5px auto; /* margem e alinhando ao centro com o auto*/
 }
 
+.subtitulo_interno {
+	font-size: 24px;
+	line-height: 30px;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.subtitulo_interno:after {
+	content: ""; /*necessário, pois é isso que irá permitir exibir o espaçador na tela, sem ele não apareceria o conteúdo*/
+	display: block; /* necessário para que seja realizado a quebra de linha igual o block da div */
+	width: 60px; 
+	height: 3px; 
+	background: #000; /* necessário usar o background para definir a cor por se tratar de uma caixa */
+	margin: 5px 0px; /* margem e alinhando ao centro com o auto*/
+}
+
 img {
 	display: block; /* por padrão as imagens são um pouco maior que seu tamanho original, pois têm um tamanho a mais na borda */
 }
@@ -110,6 +128,10 @@ img {
 }
 
 .menu ul li a:hover { /* quando passa o mouse por cima */
+	color: #fff;
+}
+
+.menu ul li a.menu_selecionado { /* mudando a cor da opção do menu selecionada, necessário estar mais específica, pois se não estiver o browser irá considerar a instrução acima, pois é mais específica */
 	color: #fff;
 }
 
@@ -153,6 +175,39 @@ img {
 }
 
 /* Fim Introdução */
+
+/*  Introdução que será usada nas demais páginas */
+
+.introducao_interna {
+	margin-top: 72px;
+	width: 100%;
+	height: 160px;
+	background: cover;
+	text-align: center;
+}
+
+.introducao_interna h1 {
+	font-size: 36px;
+	line-height: 40px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff;
+	padding-top: 45px;
+}
+
+.introducao_interna h1:after {
+	 /* será utilizado o after e o before para criar os espaçadores do site, essas pseudo classes before e after criam os elemento inline por padrão */
+	content: ""; /*necessário, pois é isso que irá permitir exibir o espaçador na tela, sem ele não apareceria o conteúdo*/
+	display: block; /* necessário para que seja realizado a quebra de linha igual o block da div */
+	width: 60px;
+	height: 3px;
+	background: #fff; /* necessário usar o background para definir a cor por se tratar de uma caixa */
+	margin: 0px auto; /* alinhado ao centro */
+	margin-bottom: 10px;
+}
+
+/* Fim da Introdução das outras páginas */
+
 
 /* Produtos */
 
@@ -256,7 +311,7 @@ img {
 	height: 83px;
 	background: url(../img/lines.png) no-repeat center;
 	position: absolute; /* é absoluto ao container que está definido como relativa, por isso que ele fica só na parte de qualidade, 
-	se o container não estiver como relative */
+	se o container não estiver como relative iria para o topo da página*/
 	top: 205px;
 	right: 169px;
 	z-index: -1; /* sempre irá ficar por trás de todos os elementos da tela */

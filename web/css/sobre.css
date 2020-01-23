@@ -1,0 +1,28 @@
+/* Introdução */
+
+.introducao_sobre {
+	background: url(../img/about/bg-about.jpg) no-repeat center;
+	background: cover;
+}
+
+.sobre {
+	padding-top: 60px;
+}
+
+.bicicletas {
+	padding-top: 20px;
+}
+
+.sobre p {
+	font-size: 18px;
+	line-height: 25px;
+	color: #000;
+	margin-bottom: 1em; /* para que tenha um espaço entre os dois parágrafos, multiplica o valor do em pelo tamanho da fonte, no caso 1 x 18 */
+	padding-right: 60px; /* para que ocorra a quebra do texto e não fique grudado o texto */
+}
+
+.sobre ul li {
+	font-family: Georgia, "Times New Roman", serif; /* caso não tiver uma fonte, bucas a outra na máquina */
+	font-size: 18px;
+	line-height: 30px;
+}

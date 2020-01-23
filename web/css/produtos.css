@@ -1,0 +1,102 @@
+/* Introdução */
+
+.introducao_produtos {
+	background: url(../img/products/bg-products.jpg) no-repeat center;
+	background: cover;
+}
+
+/* Fim Introdução */
+
+/* Produtos */
+
+
+.lista_produtos {
+	padding-top: 60px;
+}
+
+.lista_produtos h2 {
+	font-size: 36px;
+	line-height: 60px;
+	letter-spacing: .1em;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	position: relative; /* não muda a posição, pois fica em relação a ele mesmo a posição */
+	top: -170px; /* é possível alterar a posição usando em negativos os px, mas ele ainda está na tela e os outros elementos html o reconhecem na tela */
+	margin-bottom: -46px;
+}
+
+.lista_produtos h2:after, .lista_produtos h2:before {
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background: #fff;
+	margin: 0px auto;
+}
+
+.produto_icone {
+	background: #000;
+	padding: 70px 0;
+}
+
+.produto_icone img {
+	margin: auto; /* alinhando foto ao centro */
+}
+
+.produto_qualidades {
+	background: #000;
+}
+
+.produto_qualidades p {
+	padding: 20px 60px;
+	font-family: font-family: Georgia, "Times New Roman", serif; /*caso não tiver uma fonte, bucas a outra na máquina */
+	font-size: 18px;
+	line-height: 25px;
+	color: #fff;
+	height: 180px;
+	margin-top: 2px;
+}
+
+.produto_qualidades ul li {
+	color: #000;
+	background: #fec63e;
+	font-size: 18px;
+	line-height: 25px;
+	text-transform: uppercase;
+	font-weight: bold;
+	float: left; /* para que os elementos flutuem a esquerda e mantenham a ordem certa da lista  */
+	width: 227px; /* definindo tamanho para que ocorra a quebra dos elementos */
+	height: 47px;
+	text-align: center;
+	padding-top: 12px;
+}
+
+.produto_qualidades ul li:nth-child(even) { /* seleciona todos os elementos pares da lista */
+	margin-left: 2px; /* criando margem para que seja criado a linha */
+}
+
+.produto_qualidades ul li:nth-child(1), .produto_qualidades ul li:nth-child(2) { /* seleciona primeiro elemento e segundo elemento da lista */
+	margin-bottom: 2px; /* criando margem para que seja criado a linha */
+}
+
+
+.produto_qualidades ul li:nth-child(odd) { /* seleciona todos os elementos ímpares da lista */
+	margin-left: 2px; /* criando margem para que seja criado a linha */
+}
+
+.produto_qualidades ul li:nth-child(3), .passeio_qualidades ul li:nth-child(4) { /* seleciona 3 e 4 elemento da lista */
+	margin-bottom: 2px; /* criando margem para que seja criado a linha */
+}
+
+/* Fim Produtos */
+
+/* Formulário */
+
+.orcamento {
+	background: #000;
+	height: 100px;
+}
+
+/* Fim Formulário */
