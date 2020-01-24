@@ -2,7 +2,7 @@
 
 .introducao_produtos {
 	background: url(../img/products/bg-products.jpg) no-repeat center;
-	background: cover;
+	background-size: cover; /* sem isso a imagem não irá ocupar todos os 1400px da tela, ficando um espaço em branco, essa propriedade para ser reconhecida precisar estar onde está sendo definido a url da imagem, ou seja, pegando a imagem, isso é necessário, pois o container têm 940px e a imagem está dentro do container, então para ela preencher a tela toda é necessário colocar essa propriedade que diz que a imagem irá preencher toda a tela */
 }
 
 /* Fim Introdução */
@@ -96,7 +96,108 @@
 
 .orcamento {
 	background: #000;
-	height: 100px;
+	width: 100%;
+	margin-top: 60px; /* margem para separar os conteúdos */
+	padding-bottom: 40px; /* utilizado o padding, pois ele preenche e não têm mudança na cor de fundo */
+}
+
+.orcamento .sub_titulo { /* alterando o design do sub_titulo padrão */
+	padding-top: 40px;
+	color: #fec63e;
+	text-align: center;
+	margin: 0;
+}
+
+.orcamento .sub_titulo:after {
+	background: #fec63e;
+	margin-bottom: 40px;
+}
+
+.formulario {
+	padding-right: 60px;
+}
+
+.formulario label {
+	display: block; /* quebra de linha */
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 18px;
+	line-height: 30px;
+	color: #fff;
+	margin-bottom: 5px;
+}
+
+.formulario input {
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 14px;
+	outline: none; /* propriedade que fica como se a caixa estivesse selecionada dentro, ficando uma cor de fundo azul, removendo essa proprieda para ajustar o visual */
+	background: none; /* tirando a cor de fundo dos input */
+	color: #fff;
+	width: 100%;
+	border: 3px solid #fec63e;
+	padding: 8px 10px;
+	margin-bottom: 10px;
+}	
+
+.formulario textarea {
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 14px;
+	outline: none; /* propriedade que fica como se a caixa estivesse selecionada dentro, ficando uma cor de fundo azul, removendo essa proprieda para ajustar o visual */
+	background: none; /* tirando a cor de fundo dos input */
+	color: #fff;
+	width: 100%;
+	height: 140px;
+	border: 3px solid #fec63e;
+	padding: 8px 10px;
+	margin-bottom: 10px;
+
+	resize: none; /* desabilitando opção que permite aumentar o tamanho do textarea */
+}	
+
+.formulario button {
+	margin-top: 20px;
+	margin: auto;
+	padding: 10px 40px; /* como o padding é igual para ambos os lados, automaticamente o texto é centralizado */
+	background: none;
+	text-align: center;
+}
+
+.dados h3 {
+	font-size: 18px;
+	line-height: 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #fec63e;
+}
+
+.dados span {
+	display: block; /* para quebrar a linha do conteúdo, span por padrão é inline */
+	color: #fff;
+	font-size: 18px;
+	line-height: 30px;
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+.dados span:nth-of-type(2) { /* pega o segundo elemento que é spam e aplica o estilo desejado, no caso uma margem para baixo*/
+	margin-bottom: 40px;
+}
+
+.dados p {
+	font-family: Georgia, "Times New Roman", serif;
+	color: #fff;
+	font-size: 14px;
+	line-height: 30px;
+}
+
+.dados ul li {
+	font-family: Georgia, "Times New Roman", serif;
+	color: #fff;
+	font-size: 14px;
+	line-height: 30px;
+	padding: 0px 10px; /* preenchimento para o lado, para dar o efeito de um tab no texto */
+}
+
+.dados ul li:nth-child(odd) { /* seleciona todos os elementos ímpares da lista */
+	color: #fec63e;
 }
 
 /* Fim Formulário */

@@ -1,0 +1,149 @@
+/* Introdução */
+
+.introducao_contato {
+	background: url(../img/contact/bg-contact.jpg) no-repeat center;
+	background-size: cover; /* sem isso a imagem não irá ocupar todos os 1400px da tela, ficando um espaço em branco, essa propriedade para ser reconhecida precisar estar onde está sendo definido a url da imagem, ou seja, pegando a imagem, isso é necessário, pois o container têm 940px e a imagem está dentro do container, então para ela preencher a tela toda é necessário colocar essa propriedade que diz que a imagem irá preencher toda a tela */
+}
+
+/* Fim Introdução */
+
+/* Formulário */
+
+.contato {
+	/*background: #000;*/
+	width: 100%;
+	margin-top: 60px; /* margem para separar os conteúdos */
+	padding-bottom: 40px; /* utilizado o padding, pois ele preenche e não têm mudança na cor de fundo */
+}
+
+.contato .sub_titulo { /* alterando o design do sub_titulo padrão */
+	padding-top: 40px;
+	color: #fec63e;
+	text-align: center;
+	margin: 0;
+}
+
+.contato .sub_titulo:after {
+	background: #fec63e;
+	margin-bottom: 40px;
+}
+
+.formulario_contato {
+	padding-right: 60px;
+}
+
+.formulario_contato label {
+	display: block; /* quebra de linha */
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 18px;
+	line-height: 30px;
+	color: #000;
+	margin-bottom: 5px;
+}
+
+.formulario_contato input {
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 14px;
+	outline: none; /* propriedade que fica como se a caixa estivesse selecionada dentro, ficando uma cor de fundo azul, removendo essa proprieda para ajustar o visual */
+	background: none; /* tirando a cor de fundo dos input */
+	color: #000;
+	width: 100%;
+	border: 3px solid #000;
+	padding: 8px 10px;
+	margin-bottom: 10px;
+}	
+
+.formulario_contato textarea {
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 14px;
+	outline: none; /* propriedade que fica como se a caixa estivesse selecionada dentro, ficando uma cor de fundo azul, removendo essa proprieda para ajustar o visual */
+	background: none; /* tirando a cor de fundo dos input */
+	color: #000;
+	width: 100%;
+	height: 140px;
+	border: 3px solid #000;
+	padding: 8px 10px;
+	margin-bottom: 10px;
+
+	resize: none; /* desabilitando opção que permite aumentar o tamanho do textarea */
+}	
+
+.formulario_contato button {
+	margin-top: 20px;
+	margin: auto;
+	padding: 10px 40px; /* como o padding é igual para ambos os lados, automaticamente o texto é centralizado */
+	background: none;
+	text-align: center;
+	border-color: #000;
+	color: #000;
+}
+
+.formulario_contato button:hover { /* ação de passar o mouse por cima do botão */
+	border-color: #fec63e;
+	color: #fec63e;
+}
+
+.dados_contato h3 {
+	font-size: 18px;
+	line-height: 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #000;
+}
+
+.dados_contato h3:after {
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background: #000;
+	margin-bottom: 10px;
+}
+
+.dados_contato span {
+	display: block; /* para quebrar a linha do conteúdo, span por padrão é inline */
+	color: #000;
+	font-size: 18px;
+	line-height: 30px;
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+.dados_contato span:nth-of-type(even) { /* pega todos os elementos pares que é spam e aplica o estilo desejado, no caso uma margem para baixo*/
+	margin-bottom: 40px;
+}
+
+.dados_contato p {
+	font-family: Georgia, "Times New Roman", serif;
+	color: #fff;
+	font-size: 14px;
+	line-height: 30px;
+}
+
+.dados_contato ul li {
+	font-family: Georgia, "Times New Roman", serif;
+	color: #fff;
+	font-size: 14px;
+	line-height: 30px;
+	/*padding: 0px 10px; /* preenchimento para o lado, para dar o efeito de um tab no texto */
+}
+
+.dados_contato ul li:nth-child(odd) { /* seleciona todos os elementos ímpares da lista */
+	color: #fec63e;
+}
+
+.contato_redes li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.contato_redes li a {
+	border: 4px solid #000;
+	padding: 7px;
+	display: block; /* para que tenha a quebra de linha na tag a que por padrão é inline */
+}
+
+.contato_redes li a:hover {
+	border-color: #fec63e;
+}
+
+/* Fim Formulário */
