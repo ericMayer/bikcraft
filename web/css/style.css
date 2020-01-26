@@ -32,6 +32,11 @@ cite { /* padrão do estilo das citações do site */
 	color: #fff;
 }
 
+img {
+	display: block; /* por padrão as imagens são um pouco maior que seu tamanho original, pois têm um tamanho a mais na borda */
+	max-width: 100%; /* sempre irá pegar todo o tamanho da tela */
+}
+
 .button { /*configuração padrão do botão que será usado no site */
 	border: 4px solid #fec63e; /* necessário definir o tipo da borda solida, pontilhada, etc, se não definir a borda não aparece */
 	padding: 10px 30px; /* espaçamento do texto até a borda, isso irá aumentar o tamanho do botão ao tamanho ideal */
@@ -90,10 +95,6 @@ cite { /* padrão do estilo das citações do site */
 	margin: 5px 0px; /* margem e alinhando ao centro com o auto*/
 }
 
-img {
-	display: block; /* por padrão as imagens são um pouco maior que seu tamanho original, pois têm um tamanho a mais na borda */
-}
-
 /* Fim das classes gerais */
 
 /* header */
@@ -103,7 +104,7 @@ img {
 	top: 0; /* fica sempre no topo da página */
 	width: 100%;
 	background-color: #fec63e; /* amarelo */
-	padding: 5px 0;
+	padding: 10px 0;
 	z-index: 10; /* posiciona esse elemento acima de tudo, necessário, pois têm vários elementos que têm position depois do cabeçalho */
 }
 
@@ -229,6 +230,10 @@ img {
 	background: #fec63e; /* cor de fundo amarelo */
 }
 
+.produtos_lista li img {
+	margin: 0 auto; /* alinhando imagem do ícone ao centro */
+}
+
 .icone {
 	background-color: #000; /* cor de fundo preta*/
 	padding: 30px; /* preenchimento de todos os lados em cima, direita, baixo e esquerda */
@@ -335,7 +340,7 @@ img {
 }
 
 .qualidade_lista li {
-	padding: 0 40px;
+	padding: 0 40px; /* espaço para os lados para o texto não ficar grudado */
 }
 
 .qualidade_lista li h3 {
@@ -407,7 +412,6 @@ img {
 	height: 3px;
 	background: #fec63e;
 	margin: 6px 0px 12px 0px;
-
 }
 
 .rodape_historia {

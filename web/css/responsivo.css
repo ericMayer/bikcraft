@@ -1,0 +1,131 @@
+/* Iniciando design responsivo */
+
+/* Dispositivos com tamanho de tela de tablets */
+@media only screen and (min-width: 818px) and (max-width: 999px) {
+
+	/* Qualidade Home */
+
+	.qualidade:after { /* será adicionado a imagem das linhas */
+		right: 73px; /* arrumando a posição das linhas para ficar melhor nas telas de tablet */
+	}
+
+	.qualidade_lista li {
+		padding: 0 10px; /* espaço para os lados das qualidades para que o texto não fique grudado */
+	}
+
+	/* Fim da Adpatação da parte de Qualidade da Home */
+
+	/* Rodapé Redes Sociais */
+
+	.rodape_redes li {
+		margin-right: 6px; /* diminuindo espaçamento entre os ícones das redes sociais para ficarem na mesma linha */
+	}
+
+
+	.rodape_redes li a {
+		padding: 6px; /* preenchimento de todos os lados que os ícones irão ganhar dentro da caixa que estão */
+	}
+
+	.rodape_redes li a img { /* diminuindo tamanho da imagem das redes sociais no rodapé para que não haja uma quebra de linha e elas fiquem uma do lado da outra */
+		width: 26px;
+		height: 26px;
+	}
+
+	/* Fim da adaptação do Rodapé Redes Sociais */
+
+
+
+}
+
+/* Fim de Dispositivos com tamanho de tela de tablets */
+
+
+/* Design para celulares */
+
+@media only screen and (max-width: 818px) {
+
+	/* Classes Gerais */
+
+	.sub_titulo {
+		font-size: 24px;
+		line-height: 30px;
+		letter-spacing: .1em;
+		text-transform: uppercase;
+		font-weight: bold;
+		margin-bottom: 20px;
+	}
+
+
+	/* Fim das classes Gerais */
+
+
+	/* Cabeçalho */
+
+	.cabecalho {
+		position: relative; /* o cabeçalho não precisa mais ser fixo, devido a limitação do tamanho da tela */
+		padding-top: 20px; /* distância para não ficar colado o logo no topo da página */
+		margin: 0px;
+		padding-bottom: 0px;
+	}
+
+	.cabecalho img {
+		/*padding: 20px;*/
+		margin: 0 auto 10px auto; /* centralizando imagem e colocando uma margem de 20px abaixo da imagem*/
+
+	}
+
+	.menu ul {
+		text-align: center;
+		/*margin-bottom: 20px;*/
+	}
+	
+	.menu ul li {
+		margin: 5px; /* colocando uma distância entre as opções do menu */
+ 	}
+
+	.menu ul li a {
+		width: 130px; /* tamanho de cada caixa do menu */
+		/*padding: 0px;*/
+		border: 4px solid #000;
+		display: block; /* cada elemento irá quebra linha */
+		float: left; /* colocando para flutuarem a esquerda, assim será possível ficar um do lado do outro */
+		/*line-height: 0px; /* altura da linha distância de um texto para o texto debaixo*/
+		/*letter-spacing: normal;*/
+	}
+
+	/* Fim do Cabeçalho */
+
+	/* Introdução Home */
+
+	h1 { /* padrão utilizado nos títulos h1 do site */
+		font-size: 36px;
+		/* line-height: 60px; */
+		text-transform: uppercase;
+		font-weight: bold;
+		color: #fff;
+	}
+
+	.introducao {
+		margin-top: 0px; /* tirando a margem do topo para que a imagem fique colada no menu */
+		padding-top: 30px; /* preenchimento de 40px no topo para separar o texto da borda da imagem */
+		background: url("../img/bg-home-mobile.jpg") no-repeat center; /* imagem de fundo que não se repete e alinhada ao centro */
+		background-size: cover; /* cobre toda a área de fundo sendo redimensionada a imagem para ter o menor tamanho
+								serviria para reajustar a imagem caso estivesse em um tamanho maior, porém a imagem já está no tamanho ideal */
+
+	}
+
+	/* Fim Introdução */
+
+	/* Qualidade Home */
+
+	.qualidade:after { /* será adicionado a imagem das linhas */
+		display: none; /* tirando todos os efeitos, pois a linha não irá ter como ser exebida no celular devido a limitação de tamanho da tela */
+	}
+
+	/* Fim Qualidade Home */
+
+}
+
+/* Fim de Design para celulares */
+
+/* Fim do design responsivo */
