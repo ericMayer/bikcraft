@@ -70,7 +70,7 @@
 
 .formulario_contato button {
 	margin-top: 20px;
-	margin: auto;
+	margin: 0 auto;
 	padding: 10px 40px; /* como o padding é igual para ambos os lados, automaticamente o texto é centralizado */
 	background: none;
 	text-align: center;

@@ -15,6 +15,33 @@
 
 	/* Fim da Adpatação da parte de Qualidade da Home */
 
+	/* Produtos */
+
+	.lista_produtos h2 {
+		top: -140px; /* é possível alterar a posição usando em negativos os px, mas ele ainda está na tela e os outros elementos html o reconhecem na tela */
+		margin-bottom: -46px;
+	}
+
+	.produto_icone {
+		padding: 41px 0;
+	}
+
+	.produto_qualidades p {
+		padding: 20px 30px;
+		font-size: 14px; /* diminuindo a fonte para ficar melhor a visualização */
+		line-height: 20px;
+		height: 121px; /* diminuindo o tamanho para ficar alinhado a imagem */
+		margin: 0px; /* tiando a margem para não ficar desalinhado */
+	}
+
+	.produto_qualidades ul li {
+		width: 179px; /* definindo tamanho para que ocorra a quebra dos elementos */
+		height: 48px;
+	}
+
+	/* Fim adaptação Produtos */
+
+
 	/* Rodapé Redes Sociais */
 
 	.rodape_redes li {
@@ -47,6 +74,15 @@
 	/* Classes Gerais */
 
 	.sub_titulo {
+		font-size: 24px;
+		line-height: 30px;
+		letter-spacing: .1em;
+		text-transform: uppercase;
+		font-weight: bold;
+		margin-bottom: 20px;
+	}
+
+	.subtitulo_interno {
 		font-size: 24px;
 		line-height: 30px;
 		letter-spacing: .1em;
@@ -93,6 +129,10 @@
 		/*letter-spacing: normal;*/
 	}
 
+	.menu ul li a.menu_selecionado { /* mudando a cor da opção do menu selecionada, necessário estar mais específica, pois se não estiver o browser irá considerar a instrução acima, pois é mais específica */
+		border-color: #fff; /* alterando cor da borda para branco */
+	}
+
 	/* Fim do Cabeçalho */
 
 	/* Introdução Home */
@@ -116,7 +156,28 @@
 
 	/* Fim Introdução */
 
+	/*  Introdução que será usada nas demais páginas */
+
+	.introducao_interna {
+		margin-top: 0px; /* tirando a margem, pois o menu já não é mais fixo */
+	}
+
+	/* Fim Introdução que será usada nas demais páginas */
+
+
+	/* Produtos Home */
+
+	.produtos {
+		padding-top: 40px;
+	}
+
+	/* Fim Produtos Home */
+
 	/* Qualidade Home */
+
+	.qualidade {
+		padding-top: 40px;
+	}
 
 	.qualidade:after { /* será adicionado a imagem das linhas */
 		display: none; /* tirando todos os efeitos, pois a linha não irá ter como ser exebida no celular devido a limitação de tamanho da tela */
@@ -124,8 +185,83 @@
 
 	/* Fim Qualidade Home */
 
+	/* Página Sobre */
+
+	.sobre p {
+		padding-right: 0px; /* para que ocorra a quebra do texto e não fique grudado o texto */
+	}
+
+	/* Fim da página Sobre */
+
+	/* Produtos */
+
+	.lista_produtos h2 {
+		top: -100px; /* é possível alterar a posição usando em negativos os px, mas ele ainda está na tela e os outros elementos html o reconhecem na tela */
+		margin-bottom: -68px;
+	}
+
+	.produto_icone {
+		padding: 41px 0;
+	}
+
+	.produto_qualidades p {
+		padding: 20px 30px;
+		font-size: 14px; /* diminuindo a fonte para ficar melhor a visualização */
+		line-height: 20px;
+		height: auto; /* o tamanho será de acordo com o texto */
+		margin: 0px; /* tiando a margem para não ficar desalinhado */
+	}
+
+	.produto_qualidades ul li {
+		width: 149px; /* definindo tamanho para que ocorra a quebra dos elementos */
+		height: 49px;
+		font-size: 14px;
+		line-height: 20px;
+		padding-top: 14px;
+	}
+
+	.produto_qualidades ul li:nth-child(odd) { /* seleciona todos os elementos ímpares da lista */
+		margin-left: 0px; /* tirando essa margem para conteúdo encaixar e ficar uma linha branca separando a lista */
+	}
+
+	/* Formulário */
+
+	.formulario {
+		padding-right: 0px; /* tirando espaçamento para o lado, para assim conseguir expandir para 100% */
+	}
+
+	/* Fim Formulário */
+
+	/* Fim adaptação Produtos */
+
+	/* Contato */
+
+	.contato {
+		padding-bottom: 0px;
+	}
+
+	.formulario_contato {
+		padding-right: 0px; /* sem o preenchimento as caixas de input do formulário irão se expandir ao máximo */
+	}
+
+	.dados_contato {
+		margin-bottom: 40px;
+	}
+
+	.mapa {
+		margin-bottom: 20px;
+	}
+
+	/*.contato_redes li a {
+		margin: 0;
+	}*/
+
+
+	/* Fim Contato */
+
+
 }
 
 /* Fim de Design para celulares */
 
-/* Fim do design responsivo */
+/* Fim do design responsivo 

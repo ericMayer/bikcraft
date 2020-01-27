@@ -42,7 +42,7 @@
 }
 
 .produto_icone img {
-	margin: auto; /* alinhando foto ao centro */
+	margin: 0 auto; /* alinhando foto ao centro */
 }
 
 .produto_qualidades {
@@ -51,7 +51,7 @@
 
 .produto_qualidades p {
 	padding: 20px 60px;
-	font-family: font-family: Georgia, "Times New Roman", serif; /*caso não tiver uma fonte, bucas a outra na máquina */
+	font-family: Georgia, "Times New Roman", serif; /*caso não tiver uma fonte, bucas a outra na máquina */
 	font-size: 18px;
 	line-height: 25px;
 	color: #fff;
