@@ -75,16 +75,16 @@
 				<form id="contato_form" class="formulario_contato grid-8">
 
 					<label for="txtNome"> Nome </label>
-					<input type="text" name="nome" id="txtNome">
+					<input type="text" name="nome" id="txtNome" required>
 
 					<label for="txtEmail"> E-mail </label>
-					<input type="text" name="email" id="txtEmail">
+					<input type="email" name="email" id="txtEmail" required>
 
 					<label for="txtTelefone"> Telefone </label>
 					<input type="text" name="telefone" id="txtTelefone">
 
 					<label for="txtMensagem"> Mensagem </label>
-					<textarea name="mensagem" id="txtMensagem"> </textarea>
+					<textarea name="mensagem" id="txtMensagem" required> </textarea>
 
 					<button type="submit" id="btnContato" name="enviar_contato" class="button"> Enviar </button>
 					
