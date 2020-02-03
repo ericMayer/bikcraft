@@ -38,6 +38,7 @@
 	font-size: 18px;
 	font-weight: bold;
 	letter-spacing: normal;
+	text-transform: none;
 	text-align: right;
 	float: right;
 	margin-bottom: 60px; /* separando nome do cliente do portfólio */

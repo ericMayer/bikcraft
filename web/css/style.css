@@ -45,7 +45,9 @@ img {
 	text-transform: uppercase;
 	font-size: 14px;
 	line-height: 20px;
-	letter-spacing: .1em; /* espaçamento entre as letras padrão que será usado no site em títulos, botão, e nomes */	
+	letter-spacing: .1em; /* espaçamento entre as letras padrão que será usado no site em títulos, botão, e nomes */
+	transition: all ease; /* criando uma transição de tudo com um efeito mais suave, quando a pessoa passar o mouse em cima do menu */
+
 }
 
 .button:hover { /* quando passar o mouse por cima */
@@ -126,6 +128,7 @@ img {
 	padding: 10px 0; /* espaço de seleção do menu de cada item */
 	letter-spacing: .1em; /* espaçamento entre as letras */
 	line-height: 20px; /* altura da linha distância de um texto para o texto debaixo*/
+	transition: all ease; /* criando uma transição de tudo com um efeito mais suave, quando a pessoa passar o mouse em cima do menu */
 }
 
 .menu ul li a:hover { /* quando passa o mouse por cima */
@@ -433,6 +436,7 @@ img {
 	border: 4px solid #fec63e;
 	padding: 10px;
 	display: block; /* para que tenha a quebra de linha na tag a que por padrão é inline */
+	transition: all ease; /* criando uma transição de tudo com um efeito mais suave, quando a pessoa passar o mouse em cima do menu */
 }
 
 .rodape_redes li a:hover {
