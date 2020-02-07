@@ -30,6 +30,9 @@
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/produtos.css">
 		<link rel="stylesheet" href="css/responsivo.css">
+
+		<script>document.documentElement.classList.add("js");</script> <!-- adicionando a classe js caso o javascript esteja habilitado, se não estiver a classe não é adicionada -->
+		
 	</head>
 
 	<body>
@@ -191,7 +194,7 @@
 
 				<h2 class="sub_titulo">Orçamento</h2>
 
-				<form id="orcamento_form" class="formulario grid-8">
+				<form id="orcamento_form" method="post" class="formulario grid-8">
 
 					<label for="txtNome"> Nome </label>
 					<input type="text" name="nome" id="txtNome" required>
@@ -205,7 +208,7 @@
 					<label for="txtMensagem"> Especificações </label>
 					<textarea name="mensagem" id="txtMensagem" required> </textarea>
 
-					<button type="submit" id="btnOrcamento" name="orcamento_enviar" class="button"> Enviar </button>
+					<button type="submit" id="btnOrcamento" name="orcamento_enviar" onclick="enviar_mensagem();" class="button"> Enviar </button>
 					
 				</form>
 
@@ -324,9 +327,12 @@
 
 		</footer>
 
-
-
 		<!-- Fim do Rodapé -->
+
+
+		<!-- Javascritp  -->
+		<script type="text/javascript" src="js/enviar.js"></script>
+		<!--  Fim do Javascript -->
 
 	</body>
 

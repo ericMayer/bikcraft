@@ -30,6 +30,9 @@
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/contato.css">
 		<link rel="stylesheet" href="css/responsivo.css">
+
+		<script>document.documentElement.classList.add("js");</script> <!-- adicionando a classe js caso o javascript esteja habilitado, se não estiver a classe não é adicionada -->
+
 	</head>
 
 	<body>
@@ -72,7 +75,7 @@
 			
 			<div class="container">
 
-				<form id="contato_form" class="formulario_contato grid-8">
+				<form id="contato_form" method="post" class="formulario_contato grid-8">
 
 					<label for="txtNome"> Nome </label>
 					<input type="text" name="nome" id="txtNome" required>
@@ -86,7 +89,7 @@
 					<label for="txtMensagem"> Mensagem </label>
 					<textarea name="mensagem" id="txtMensagem" required> </textarea>
 
-					<button type="submit" id="btnContato" name="enviar_contato" class="button"> Enviar </button>
+					<button type="submit" id="btnContato" name="enviar_contato" onclick="enviar_mensagem();" class="button"> Enviar </button>
 					
 				</form>
 
@@ -207,7 +210,7 @@
 								<a href="https://www.instagram.com/?hl=pt-br" target="_blank">
 									<img src="img/social-networks/instagram.png" alt="Bikcraft Ícone do Instagram">
 								</a>
-							</li>
+						</li>
 
 							<li>
 								<a href="https://twitter.com/login?lang=pt" target="_blank">
@@ -233,10 +236,11 @@
 			
 
 		</footer>
-
-
-
 		<!-- Fim do Rodapé -->
+
+		<!-- Javascritp  -->
+		<script type="text/javascript" src="js/enviar.js"></script>
+		<!--  Fim do Javascript -->
 
 	</body>
 
