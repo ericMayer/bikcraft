@@ -69,7 +69,7 @@
 
 /* Design para celulares */
 
-@media only screen and (max-width: 818px) {
+@media only screen and (max-width: 817px) {
 
 	/* Classes Gerais */
 
@@ -183,12 +183,21 @@
 		display: none; /* tirando todos os efeitos, pois a linha não irá ter como ser exebida no celular devido a limitação de tamanho da tela */
 	}
 
+	.qualidade .acao {
+		margin-top: 0px; /* tirando a margem do botão para cima para não ficar tão distante do conteúdo no celular */
+	}
+	
 	/* Fim Qualidade Home */
 
+	
 	/* Página Sobre */
 
 	.sobre p {
 		padding-right: 0px; /* para que ocorra a quebra do texto e não fique grudado o texto */
+	}
+
+	.qualidade_lista {
+		padding-bottom: 20px; /* diminuindo espaço da quebra para o conteúdo não ficar muito separada */
 	}
 
 	/* Fim da página Sobre */
