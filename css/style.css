@@ -1,1 +1,1784 @@
-html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}a{text-decoration:none}ol,ul{list-style:none}html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,a,em,img,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,article,footer,header,nav,section,main{margin:0;padding:0;border:0;vertical-align:baseline}h1,h2,h3,h4,h5,h6,p,a,ul{font-size:1em;font-weight:400}*,:before,:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.container{width:960px;margin:0 auto;padding:0;position:relative}.container:after,.container:before{content:" ";display:table}.container:after{clear:both}.grid-1,.grid-2,.grid-3,.grid-4,.grid-5,.grid-6,.grid-7,.grid-8,.grid-9,.grid-10,.grid-11,.grid-12,.grid-13,.grid-14,.grid-15,.grid-16,.grid-1-3{float:left;margin-left:10px;margin-right:10px}.grid-1{width:40px}.grid-2{width:100px}.grid-3{width:160px}.grid-4{width:220px}.grid-5{width:280px}.grid-6{width:340px}.grid-7{width:400px}.grid-8{width:460px}.grid-9{width:520px}.grid-10{width:580px}.grid-11{width:640px}.grid-12{width:700px}.grid-13{width:760px}.grid-14{width:820px}.grid-15{width:880px}.grid-16{width:940px}.grid-1-3{width:300px}@media only screen and (min-width: 818px) and (max-width: 999px){.container{width:768px}.grid-1{width:28px}.grid-2{width:76px}.grid-3{width:124px}.grid-4{width:172px}.grid-5{width:220px}.grid-6{width:268px}.grid-7{width:316px}.grid-8{width:364px}.grid-9{width:412px}.grid-10{width:460px}.grid-11{width:508px}.grid-12{width:556px}.grid-13{width:604px}.grid-14{width:652px}.grid-15{width:700px}.grid-16{width:748px}.grid-1-3{width:236px}}@media only screen and (max-width: 818px){.container{width:300px}.grid-1,.grid-2,.grid-3,.grid-4,.grid-5,.grid-6,.grid-7,.grid-8,.grid-9,.grid-10,.grid-11,.grid-12,.grid-13,.grid-14,.grid-15,.grid-16,.grid-1-3{width:300px;float:none;margin:0 0 20px}}body{font-family:Arial,Helvetica,sans-serif}p{font-family:Georgia,"Times New Roman",serif;color:#fff;font-size:14px;line-height:20px}h1{font-size:48px;text-transform:uppercase;font-weight:700;color:#fff}cite{font-size:14px;line-height:20px;text-transform:uppercase;font-style:normal;font-weight:700;letter-spacing:.1em;color:#fff}img{display:block;max-width:100%}.button{border:4px solid #fec63e;padding:10px 30px;color:#fec63e;font-weight:700;text-transform:uppercase;font-size:14px;line-height:20px;letter-spacing:.1em;transition:all ease}.button:hover{color:#fff;border-color:#fff}.button.button_preto:hover{color:#000;border-color:#000}.sub_titulo{font-size:24px;line-height:30px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;margin-bottom:40px}.sub_titulo:after{content:"";display:block;width:60px;height:3px;background:#000;margin:5px auto}.subtitulo_interno{font-size:24px;line-height:30px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;margin-bottom:20px}.subtitulo_interno:after{content:"";display:block;width:60px;height:3px;background:#000;margin:5px 0}.cabecalho{position:fixed;top:0;width:100%;background-color:#fec63e;padding:10px 0;z-index:10}.menu{text-align:right}.menu ul li{display:inline-block;margin-left:20px;margin-top:20px}.menu ul li a{font-size:14px;font-weight:700;text-transform:uppercase;color:#000;padding:10px 0;letter-spacing:.1em;line-height:20px;transition:all ease}.menu ul li a:hover{color:#fff}.menu ul li a.menu_selecionado{color:#fff}.introducao{width:100%;height:380px;margin-top:72px;background:url(../img/bg-home.jpg) no-repeat center;background-size:cover;text-align:center;padding-top:70px}.introducao .button{display:inline-block;margin-top:40px}.citacao_externa{max-width:260px;margin:0 auto}.citacao_externa p:before,.citacao_externa p:after{content:"";display:block;width:60px;height:3px;background:#fff;margin:10px auto}.introducao_interna{width:100%;margin-top:72px;height:160px;text-align:center}.introducao_interna h1{font-size:36px;line-height:40px;font-weight:700;text-transform:uppercase;color:#fff;padding-top:45px}.introducao_interna h1:after{content:"";display:block;width:60px;height:3px;background:#fff;margin:0 auto;margin-bottom:10px}.produtos{padding-top:60px;text-align:center}.produtos_lista li{background:#fec63e}.produtos_lista li img{margin:0 auto}.icone{background-color:#000;padding:30px}.produtos_lista li h3{font-size:18px;line-height:25px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:#000;margin-top:10px}.produtos_lista li h3:after{content:"";display:block;width:60px;height:3px;background:#000;margin:3px auto}.produtos_lista li p{color:#000;padding:10px 20px 20px}.acao p{color:#000;font-size:14px;line-height:20px;margin-bottom:20px}.acao{clear:both;margin-top:40px;margin-bottom:60px;display:inline-block}.portfolio{width:100%;background-color:#000;text-align:center;padding-top:40px}.portfolio .sub_titulo{color:#fec63e}.portfolio .sub_titulo:after{background:#fec63e}.portfolio .acao p{color:#fff}.portfolio .acao{margin-top:40px;margin-bottom:53px}.portfolio_lista li:last-child{margin-top:20px}.qualidade{text-align:center;padding-top:60px}.qualidade:after{content:"";display:block;width:620px;height:83px;background:url(../img/lines.png) no-repeat center;position:absolute;top:205px;right:169px;z-index:-1}.qualidade_lista{padding-top:20px}.qualidade img{margin:0 auto}.qualidade_lista li{padding:0 40px}.qualidade_lista li h3{font-size:18px;line-height:25px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:#000;margin-top:10px}.qualidade_lista li h3:after{content:"";display:block;width:60px;height:3px;background:#000;margin:6px auto}.qualidade_lista p{color:#000}.quebra{width:100%;height:220px;background:url(../img/bg-footer.jpg) no-repeat center;padding-top:40px;text-align:center;background-size:cover}.quebra .citacao_externa{max-width:400px}.rodape{width:100%;background:#000;color:#fff;padding:20px}.rodape h3{font-size:18px;line-height:25px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:#fec63e}.rodape h3:after{content:"";display:block;width:60px;height:3px;background:#fec63e;margin:6px 0 12px}.rodape_historia{padding-right:40px}.rodape_contato{font-family:Georgia,"Times New Roman",serif;font-size:14px;line-height:20px}.rodape_redes li{display:inline-block;margin-right:10px}.rodape_redes li a{border:4px solid #fec63e;padding:10px;display:block;transition:all ease}.rodape_redes li a:hover{border-color:#fff}.copy{width:100%;background-color:#fec63e;padding:20px 0}.copy p{color:#000}.introducao_contato{background:url(../img/contact/bg-contact.jpg) no-repeat center;background-size:cover}.contato{width:100%;margin-top:60px;padding-bottom:40px}.contato .sub_titulo{padding-top:40px;color:#fec63e;text-align:center;margin:0}.contato .sub_titulo:after{background:#fec63e;margin-bottom:40px}.formulario_contato{padding-right:60px}.formulario_contato label{display:block;font-family:Georgia,"Times New Roman",serif;font-size:18px;line-height:30px;color:#000;margin-bottom:5px}.formulario_contato input{font-family:Georgia,"Times New Roman",serif;font-size:14px;outline:none;background:none;color:#000;width:100%;border:3px solid #000;padding:8px 10px;margin-bottom:10px}.formulario_contato textarea{font-family:Georgia,"Times New Roman",serif;font-size:14px;outline:none;background:none;color:#000;width:100%;height:140px;border:3px solid #000;padding:8px 10px;margin-bottom:10px;resize:none}.formulario_contato button{margin:0 auto;padding:10px 40px;background:none;text-align:center;border-color:#000;color:#000}.formulario_contato button:hover{border-color:#fec63e;color:#fec63e}.dados_contato h3{font-size:18px;line-height:30px;text-transform:uppercase;font-weight:700;color:#000}.dados_contato h3:after{content:"";display:block;width:60px;height:3px;background:#000;margin-bottom:10px}.dados_contato span{display:block;color:#000;font-size:18px;line-height:30px;font-family:Georgia,"Times New Roman",serif}.dados_contato span:nth-of-type(even){margin-bottom:40px}.dados_contato p{font-family:Georgia,"Times New Roman",serif;color:#fff;font-size:14px;line-height:30px}.dados_contato ul li{font-family:Georgia,"Times New Roman",serif;color:#fff;font-size:14px;line-height:30px}.dados_contato ul li:nth-child(odd){color:#fec63e}.contato_redes li{display:inline-block;margin-right:10px}.contato_redes li a{border:4px solid #000;padding:7px;display:block;transition:all ease}.contato_redes li a:hover{border-color:#fec63e}.mapa{margin-bottom:60px}.introducao_portfolio{background:url(../img/portfolio/bg-portfolio.jpg) no-repeat center;background-size:cover}.portfolio{padding-bottom:40px}.elogios{padding-top:40px;margin:0 auto;max-width:400px}.elogios p{font-family:Georgia,"Times New Roman",serif;color:#000;font-size:18px;line-height:25px;font-style:italic;text-align:center;margin-bottom:20px}.elogios cite{color:#000;font-size:18px;font-weight:700;letter-spacing:normal;text-transform:none;text-align:right;float:right;margin-bottom:60px}.introducao_produtos{background:url(../img/products/bg-products.jpg) no-repeat center;background-size:cover}.lista_produtos{padding-top:60px}.lista_produtos h2{font-size:36px;line-height:60px;letter-spacing:.1em;color:#fff;text-transform:uppercase;font-weight:700;text-align:center;position:relative;top:-170px;margin-bottom:-46px}.lista_produtos h2:after,.lista_produtos h2:before{content:"";display:block;width:60px;height:3px;background:#fff;margin:0 auto}.produto_icone{background:#000;padding:70px 0}.produto_icone img{margin:0 auto}.produto_qualidades{background:#000}.produto_qualidades p{padding:20px 60px;font-family:Georgia,"Times New Roman",serif;font-size:18px;line-height:25px;color:#fff;height:180px;margin-top:2px}.produto_qualidades ul li{color:#000;background:#fec63e;font-size:18px;line-height:25px;text-transform:uppercase;font-weight:700;float:left;width:227px;height:47px;text-align:center;padding-top:12px}.produto_qualidades ul li:nth-child(even){margin-left:2px}.produto_qualidades ul li:nth-child(1),.produto_qualidades ul li:nth-child(2){margin-bottom:2px}.produto_qualidades ul li:nth-child(odd){margin-left:2px}.produto_qualidades ul li:nth-child(3),.passeio_qualidades ul li:nth-child(4){margin-bottom:2px}.orcamento{background:#000;width:100%;margin-top:60px;padding-bottom:40px}.orcamento .sub_titulo{padding-top:40px;color:#fec63e;text-align:center;margin:0}.orcamento .sub_titulo:after{background:#fec63e;margin-bottom:40px}.formulario{padding-right:60px}.formulario label{display:block;font-family:Georgia,"Times New Roman",serif;font-size:18px;line-height:30px;color:#fff;margin-bottom:5px}.formulario input{font-family:Georgia,"Times New Roman",serif;font-size:14px;outline:none;background:none;color:#fff;width:100%;border:3px solid #fec63e;padding:8px 10px;margin-bottom:10px}.formulario textarea{font-family:Georgia,"Times New Roman",serif;font-size:14px;outline:none;background:none;color:#fff;width:100%;height:140px;border:3px solid #fec63e;padding:8px 10px;margin-bottom:10px;resize:none}.formulario button{margin:auto;padding:10px 40px;background:none;text-align:center}.dados h3{font-size:18px;line-height:30px;text-transform:uppercase;font-weight:700;color:#fec63e}.dados span{display:block;color:#fff;font-size:18px;line-height:30px;font-family:Georgia,"Times New Roman",serif}.dados span:nth-of-type(2){margin-bottom:40px}.dados p{font-family:Georgia,"Times New Roman",serif;color:#fff;font-size:14px;line-height:30px}.dados ul li{font-family:Georgia,"Times New Roman",serif;color:#fff;font-size:14px;line-height:30px;padding:0 10px}.dados ul li:nth-child(odd){color:#fec63e}.introducao_sobre{background:url(../img/about/bg-about.jpg) no-repeat center;background-size:cover}.sobre{padding-top:60px}.bicicletas{padding-top:20px}.sobre p{font-size:18px;line-height:25px;color:#000;margin-bottom:1em;padding-right:60px}.sobre ul li{font-family:Georgia,"Times New Roman",serif;font-size:18px;line-height:30px}.qualidade_lista{padding-bottom:170px}@media only screen and (min-width: 818px) and (max-width: 999px){.qualidade:after{right:73px}.qualidade_lista li{padding:0 10px}.lista_produtos h2{top:-140px;margin-bottom:-46px}.produto_icone{padding:41px 0}.produto_qualidades p{padding:20px 30px;font-size:14px;line-height:20px;height:121px;margin:0}.produto_qualidades ul li{width:179px;height:48px}.rodape_redes li{margin-right:6px}.rodape_redes li a{padding:6px}.rodape_redes li a img{width:26px;height:26px}}@media only screen and (max-width: 817px){.sub_titulo{font-size:24px;line-height:30px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;margin-bottom:20px}.subtitulo_interno{font-size:24px;line-height:30px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;margin-bottom:20px}.cabecalho{position:relative;padding-top:20px;margin:0;padding-bottom:0}.cabecalho img{margin:0 auto 10px}.menu ul{text-align:center}.menu ul li{margin:5px}.menu ul li a{width:130px;border:4px solid #000;display:block;float:left}.menu ul li a.menu_selecionado{border-color:#fff}h1{font-size:36px;text-transform:uppercase;font-weight:700;color:#fff}.introducao{margin-top:0;padding-top:30px;background:url(../img/bg-home-mobile.jpg) no-repeat center;background-size:cover}.introducao_interna{margin-top:0}.produtos{padding-top:40px}.qualidade{padding-top:40px}.qualidade:after{display:none}.qualidade .acao{margin-top:0}.sobre p{padding-right:0}.qualidade_lista{padding-bottom:20px}.lista_produtos h2{top:-100px;margin-bottom:-68px}.produto_icone{padding:41px 0}.produto_qualidades p{padding:20px 30px;font-size:14px;line-height:20px;height:auto;margin:0}.produto_qualidades ul li{width:149px;height:49px;font-size:14px;line-height:20px;padding-top:14px}.produto_qualidades ul li:nth-child(odd){margin-left:0}.formulario{padding-right:0}.contato{padding-bottom:0}.formulario_contato{padding-right:0}.dados_contato{margin-bottom:40px}.mapa{margin-bottom:20px}}
+/* Normalize */
+
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+ html {
+	font-family: sans-serif; /* 1 */
+	-ms-text-size-adjust: 100%; /* 2 */
+	-webkit-text-size-adjust: 100%; /* 2 */
+  }
+  
+  /**
+   * Remove default margin.
+   */
+  
+  body {
+	margin: 0;
+  }
+  
+  /* HTML5 display definitions
+	 ========================================================================== */
+  
+  /**
+   * Correct `block` display not defined for any HTML5 element in IE 8/9.
+   * Correct `block` display not defined for `details` or `summary` in IE 10/11
+   * and Firefox.
+   * Correct `block` display not defined for `main` in IE 11.
+   */
+  
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  main,
+  menu,
+  nav,
+  section,
+  summary {
+	display: block;
+  }
+  
+  /**
+   * 1. Correct `inline-block` display not defined in IE 8/9.
+   * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+   */
+  
+  audio,
+  canvas,
+  progress,
+  video {
+	display: inline-block; /* 1 */
+	vertical-align: baseline; /* 2 */
+  }
+  
+  /**
+   * Prevent modern browsers from displaying `audio` without controls.
+   * Remove excess height in iOS 5 devices.
+   */
+  
+  audio:not([controls]) {
+	display: none;
+	height: 0;
+  }
+  
+  /**
+   * Address `[hidden]` styling not present in IE 8/9/10.
+   * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+   */
+  
+  [hidden],
+  template {
+	display: none;
+  }
+  
+  /* Links
+	 ========================================================================== */
+  
+  /**
+   * Remove the gray background color from active links in IE 10.
+   */
+  
+  a {
+	background-color: transparent;
+  }
+  
+  /**
+   * Improve readability when focused and also mouse hovered in all browsers.
+   */
+  
+  a:active,
+  a:hover {
+	outline: 0;
+  }
+  
+  /* Text-level semantics
+	 ========================================================================== */
+  
+  /**
+   * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+   */
+  
+  abbr[title] {
+	border-bottom: 1px dotted;
+  }
+  
+  /**
+   * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+   */
+  
+  b,
+  strong {
+	font-weight: bold;
+  }
+  
+  /**
+   * Address styling not present in Safari and Chrome.
+   */
+  
+  dfn {
+	font-style: italic;
+  }
+  
+  /**
+   * Address variable `h1` font-size and margin within `section` and `article`
+   * contexts in Firefox 4+, Safari, and Chrome.
+   */
+  
+  h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+  }
+  
+  /**
+   * Address styling not present in IE 8/9.
+   */
+  
+  mark {
+	background: #ff0;
+	color: #000;
+  }
+  
+  /**
+   * Address inconsistent and variable font size in all browsers.
+   */
+  
+  small {
+	font-size: 80%;
+  }
+  
+  /**
+   * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+   */
+  
+  sub,
+  sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+  }
+  
+  sup {
+	top: -0.5em;
+  }
+  
+  sub {
+	bottom: -0.25em;
+  }
+  
+  /* Embedded content
+	 ========================================================================== */
+  
+  /**
+   * Remove border when inside `a` element in IE 8/9/10.
+   */
+  
+  img {
+	border: 0;
+  }
+  
+  /**
+   * Correct overflow not hidden in IE 9/10/11.
+   */
+  
+  svg:not(:root) {
+	overflow: hidden;
+  }
+  
+  /* Grouping content
+	 ========================================================================== */
+  
+  /**
+   * Address margin not present in IE 8/9 and Safari.
+   */
+  
+  figure {
+	margin: 1em 40px;
+  }
+  
+  /**
+   * Address differences between Firefox and other browsers.
+   */
+  
+  hr {
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	height: 0;
+  }
+  
+  /**
+   * Contain overflow in all browsers.
+   */
+  
+  pre {
+	overflow: auto;
+  }
+  
+  /**
+   * Address odd `em`-unit font size rendering in all browsers.
+   */
+  
+  code,
+  kbd,
+  pre,
+  samp {
+	font-family: monospace, monospace;
+	font-size: 1em;
+  }
+  
+  /* Forms
+	 ========================================================================== */
+  
+  /**
+   * Known limitation: by default, Chrome and Safari on OS X allow very limited
+   * styling of `select`, unless a `border` property is set.
+   */
+  
+  /**
+   * 1. Correct color not being inherited.
+   *    Known issue: affects color of disabled elements.
+   * 2. Correct font properties not being inherited.
+   * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+   */
+  
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+	color: inherit; /* 1 */
+	font: inherit; /* 2 */
+	margin: 0; /* 3 */
+  }
+  
+  /**
+   * Address `overflow` set to `hidden` in IE 8/9/10/11.
+   */
+  
+  button {
+	overflow: visible;
+  }
+  
+  /**
+   * Address inconsistent `text-transform` inheritance for `button` and `select`.
+   * All other form control elements do not inherit `text-transform` values.
+   * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+   * Correct `select` style inheritance in Firefox.
+   */
+  
+  button,
+  select {
+	text-transform: none;
+  }
+  
+  /**
+   * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+   *    and `video` controls.
+   * 2. Correct inability to style clickable `input` types in iOS.
+   * 3. Improve usability and consistency of cursor style between image-type
+   *    `input` and others.
+   */
+  
+  button,
+  html input[type="button"], /* 1 */
+  input[type="reset"],
+  input[type="submit"] {
+	-webkit-appearance: button; /* 2 */
+	cursor: pointer; /* 3 */
+  }
+  
+  /**
+   * Re-set default cursor for disabled elements.
+   */
+  
+  button[disabled],
+  html input[disabled] {
+	cursor: default;
+  }
+  
+  /**
+   * Remove inner padding and border in Firefox 4+.
+   */
+  
+  button::-moz-focus-inner,
+  input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+  }
+  
+  /**
+   * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+   * the UA stylesheet.
+   */
+  
+  input {
+	line-height: normal;
+  }
+  
+  /**
+   * It's recommended that you don't attempt to style these elements.
+   * Firefox's implementation doesn't respect box-sizing, padding, or width.
+   *
+   * 1. Address box sizing set to `content-box` in IE 8/9/10.
+   * 2. Remove excess padding in IE 8/9/10.
+   */
+  
+  input[type="checkbox"],
+  input[type="radio"] {
+	box-sizing: border-box; /* 1 */
+	padding: 0; /* 2 */
+  }
+  
+  /**
+   * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+   * `font-size` values of the `input`, it causes the cursor style of the
+   * decrement button to change from `default` to `text`.
+   */
+  
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+  }
+  
+  /**
+   * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+   * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+   *    (include `-moz` to future-proof).
+   */
+  
+  input[type="search"] {
+	-webkit-appearance: textfield; /* 1 */
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box; /* 2 */
+	box-sizing: content-box;
+  }
+  
+  /**
+   * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+   * Safari (but not Chrome) clips the cancel button when the search input has
+   * padding (and `textfield` appearance).
+   */
+  
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+  }
+  
+  /**
+   * Define consistent border, margin, and padding.
+   */
+  
+  fieldset {
+	border: 1px solid #c0c0c0;
+	margin: 0 2px;
+	padding: 0.35em 0.625em 0.75em;
+  }
+  
+  /**
+   * 1. Correct `color` not being inherited in IE 8/9/10/11.
+   * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+   */
+  
+  legend {
+	border: 0; /* 1 */
+	padding: 0; /* 2 */
+  }
+  
+  /**
+   * Remove default vertical scrollbar in IE 8/9/10/11.
+   */
+  
+  textarea {
+	overflow: auto;
+  }
+  
+  /**
+   * Don't inherit the `font-weight` (applied by a rule above).
+   * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+   */
+  
+  optgroup {
+	font-weight: bold;
+  }
+  
+  /* Tables
+	 ========================================================================== */
+  
+  /**
+   * Remove most spacing between table cells.
+   */
+  
+  table {
+	border-collapse: collapse;
+	border-spacing: 0;
+  }
+  
+  td,
+  th {
+	padding: 0;
+  }
+
+/* Fim Normalize */
+
+/* Reset */
+
+/* ==========================================================================
+   Reset
+   ========================================================================== */
+
+/**
+ * Remove anchor tex-decoration
+ */ 
+
+ a {
+	text-decoration: none;
+}
+
+/**
+ * Remove list-style
+ */ 
+
+ol, ul {
+	list-style: none;
+}
+
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, em, img, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, footer, header, nav, section, main {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul {
+	font-size: 1em;
+	font-weight: normal;
+}
+
+/* Fim Reset */
+
+/* Grid */
+
+*, *:before, *:after {
+	-webkit-box-sizing: border-box; /* serve para que as propriedas de não somar valores das boras e padding sejam entidas nos safari e google chrome mais antigos*/
+	-moz-box-sizing: border-box; /* esse seria para o firefox mais antigo entender a propriedade*/ 
+	box-sizing: border-box; /* não soma mais os valores da borda, padding com os valores de width e height. Válido a partir do CSS 3 */
+  }
+  
+  /* parte que vai o conteúdo */
+  .container {
+	  width: 960px;
+	  margin: 0 auto; /* alinhado ao centro */
+	  padding: 0px;
+	  position: relative; /* posiciona o elemento em relação a ele */
+  }
+  
+  /* pseudo classes para não deixar as caixas flutuando e conseguir colocar as caixas ao lado uma da outra*/
+  .container:after, .container:before {
+	  content: " ";
+	  display: table;
+  }
+  
+  /* permite colocar elementos um ao lado do outro */
+  .container:after {
+	  clear: both;
+  }
+  
+  /* layout das colunas do photoshop */
+  .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12, .grid-13, .grid-14, .grid-15, .grid-16, .grid-1-3 {
+	  float: left;
+	  margin-left: 10px;
+	  margin-right: 10px;
+  }
+  
+  
+  /* separação do tamanhos dos grids do photoshop 
+  Container = 960 px
+  Colunas = 16
+  Gutter = 20 margem
+  
+  (Container / Colunas x 5) - gutter (margem)
+  */
+  .grid-1 	{width: 40px;}
+  .grid-2 	{width: 100px;}
+  .grid-3 	{width: 160px;}
+  .grid-4 	{width: 220px;}
+  .grid-5 	{width: 280px;}
+  .grid-6 	{width: 340px;}
+  .grid-7 	{width: 400px;}
+  .grid-8 	{width: 460px;}
+  .grid-9 	{width: 520px;}
+  .grid-10 	{width: 580px;}
+  .grid-11 	{width: 640px;}
+  .grid-12 	{width: 700px;}
+  .grid-13 	{width: 760px;}
+  .grid-14 	{width: 820px;}
+  .grid-15 	{width: 880px;}
+  .grid-16 	{width: 940px;}
+  .grid-1-3	{width: 300px;}
+  
+  /* Iniciando design responsivo */
+  
+  /* Dispositivos com tamanho de tela de tablets */
+  @media only screen and (min-width: 818px) and (max-width: 999px) {
+  
+	  .container {
+		  width: 768px;
+	  }
+  
+	  .grid-1 	{width: 28px;}
+	  .grid-2 	{width: 76px;}
+	  .grid-3 	{width: 124px;}
+	  .grid-4 	{width: 172px;}
+	  .grid-5 	{width: 220px;}
+	  .grid-6 	{width: 268px;}
+	  .grid-7 	{width: 316px;}
+	  .grid-8 	{width: 364px;}
+	  .grid-9 	{width: 412px;}
+	  .grid-10 	{width: 460px;}
+	  .grid-11 	{width: 508px;}
+	  .grid-12 	{width: 556px;}
+	  .grid-13 	{width: 604px;}
+	  .grid-14 	{width: 652px;}
+	  .grid-15 	{width: 700px;}
+	  .grid-16 	{width: 748px;}
+	  .grid-1-3	{width: 236px;}
+  
+  }
+  
+  /* Fim de Dispositivos com tamanho de tela de tablets */
+  
+  
+  /* Design para celulares */
+  
+  @media only screen and (max-width: 818px) {
+	  .container {
+		  width: 300px;
+	  }
+  
+	  .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12, .grid-13, .grid-14, .grid-15, 
+	  .grid-16, .grid-1-3 {
+		  width: 300px;
+		  float: none; /* nenhum elemento irá flutuar a esquerda */
+		  margin: 0 0 20px 0; /* margem de 20px para baixo, nos lugares que ficar ruim, será removido essa opção */
+	  }
+  
+  }
+  
+  /* Fim de Design para celulares */
+  
+  /* Fim do design responsivo */
+
+/* Fim Grid */
+
+/* Style */
+
+
+/* Esses padrões serão usados em todo o design, por isso a alteração e feita diretamente na tag*/
+
+/* Classes gerais */
+
+body { /* colocado a fonte mais utilizada como padrão no body */
+	font-family: Arial, Helvetica, sans-serif; /* caso não tiver uma fonte, bucas a outra na máquina */
+}
+
+p { /* padrão dos parágrafos usados no site */ 
+	font-family: Georgia, "Times New Roman", serif; /* caso não tiver uma fonte, bucas a outra na máquina */
+	color: #fff;
+	font-size: 14px;
+	line-height: 20px;
+
+}
+
+h1 { /* padrão utilizado nos títulos h1 do site */
+	font-size: 48px;
+	/* line-height: 60px; */
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #fff;
+}
+
+cite { /* padrão do estilo das citações do site */
+	font-size: 14px;
+	line-height: 20px;
+	text-transform: uppercase;
+	font-style: normal;
+	font-weight: bold;
+	letter-spacing: .1em; /* espaçamento entre as letras */
+	color: #fff;
+}
+
+img {
+	display: block; /* por padrão as imagens são um pouco maior que seu tamanho original, pois têm um tamanho a mais na borda */
+	max-width: 100%; /* sempre irá pegar todo o tamanho da tela */
+}
+
+.button { /*configuração padrão do botão que será usado no site */
+	border: 4px solid #fec63e; /* necessário definir o tipo da borda solida, pontilhada, etc, se não definir a borda não aparece */
+	padding: 10px 30px; /* espaçamento do texto até a borda, isso irá aumentar o tamanho do botão ao tamanho ideal */
+	color: #fec63e;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: .1em; /* espaçamento entre as letras padrão que será usado no site em títulos, botão, e nomes */
+	transition: all ease; /* criando uma transição de tudo com um efeito mais suave, quando a pessoa passar o mouse em cima do menu */
+
+}
+
+.button:hover { /* quando passar o mouse por cima */
+	color: #fff;
+	border-color: #fff;
+}
+
+.button.button_preto:hover {
+	color: #000;
+	border-color: #000;
+
+}
+
+.sub_titulo {
+	font-size: 24px;
+	line-height: 30px;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 40px;
+}
+
+.sub_titulo:after {
+	content: ""; /*necessário, pois é isso que irá permitir exibir o espaçador na tela, sem ele não apareceria o conteúdo*/
+	display: block; /* necessário para que seja realizado a quebra de linha igual o block da div */
+	width: 60px; 
+	height: 3px; 
+	background: #000; /* necessário usar o background para definir a cor por se tratar de uma caixa */
+	margin: 5px auto; /* margem e alinhando ao centro com o auto*/
+}
+
+.subtitulo_interno {
+	font-size: 24px;
+	line-height: 30px;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.subtitulo_interno:after {
+	content: ""; /*necessário, pois é isso que irá permitir exibir o espaçador na tela, sem ele não apareceria o conteúdo*/
+	display: block; /* necessário para que seja realizado a quebra de linha igual o block da div */
+	width: 60px; 
+	height: 3px; 
+	background: #000; /* necessário usar o background para definir a cor por se tratar de uma caixa */
+	margin: 5px 0px; /* margem e alinhando ao centro com o auto*/
+}
+
+/* Fim das classes gerais */
+
+/* header */
+
+.cabecalho {
+	position: fixed; /* fica fixo na tela */
+	top: 0; /* fica sempre no topo da página */
+	width: 100%;
+	background-color: #fec63e; /* amarelo */
+	padding: 10px 0;
+	z-index: 10; /* posiciona esse elemento acima de tudo, necessário, pois têm vários elementos que têm position depois do cabeçalho */
+}
+
+.menu {
+	text-align: right;
+}
+
+.menu ul li {
+	display: inline-block; /* ele ocupa todo o espaço e mantém os elementos uma ao lado do outro, porém quebra a linha quandoa acaba o espaço*/
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.menu ul li a {
+	font-size: 14px;
+	font-weight: bold; /* negrito */
+	text-transform: uppercase; /* transforma texto todo em maíusculo */
+	color: #000;
+	padding: 10px 0; /* espaço de seleção do menu de cada item */
+	letter-spacing: .1em; /* espaçamento entre as letras */
+	line-height: 20px; /* altura da linha distância de um texto para o texto debaixo*/
+	transition: all ease; /* criando uma transição de tudo com um efeito mais suave, quando a pessoa passar o mouse em cima do menu */
+}
+
+.menu ul li a:hover { /* quando passa o mouse por cima */
+	color: #fff;
+}
+
+.menu ul li a.menu_selecionado { /* mudando a cor da opção do menu selecionada, necessário estar mais específica, pois se não estiver o browser irá considerar a instrução acima, pois é mais específica */
+	color: #fff;
+}
+
+/* Fim header */
+
+/* Introdução */
+
+
+.introducao {
+	width: 100%;
+	height: 380px;
+	/* padding: 150px 0; */
+	margin-top: 72px; /* margem de topo extamente do tamanho do header para separar os conteúdos, necessário pq o header está fixo */
+	background: url("../img/bg-home.jpg") no-repeat center; /* imagem de fundo que não se repete e alinhada ao centro */
+	background-size: cover; /* cobre toda a área de fundo sendo redimensionada a imagem para ter o menor tamanho
+								serviria para reajustar a imagem caso estivesse em um tamanho maior, porém a imagem já está no tamanho ideal */
+	text-align: center;
+	padding-top: 70px;
+
+}
+
+.introducao .button {
+	display: inline-block; /* colocando para poder quebrar linha, pois a tag a, por padrão é inline */
+	margin-top: 40px;
+}
+
+
+.citacao_externa {
+	max-width: 260px; /* o conteúdo não passa desse tamanho*/
+	margin: 0 auto; /* alinhado ao centro utilizando margim 0 auto, pois não aceita alinha texto ao centro depois de usar o max-width */
+	/*margin-bottom: 40px;*/
+}
+
+.citacao_externa p:before, .citacao_externa p:after { /* será utilizado o after e o before para criar os espaçadores do site, essas pseudo classes before e after criam os elemento inline por padrão */
+	content: ""; /*necessário, pois é isso que irá permitir exibir o espaçador na tela, sem ele não apareceria o conteúdo*/
+	display: block; /* necessário para que seja realizado a quebra de linha igual o block da div */
+	width: 60px;
+	height: 3px;
+	background: #fff; /* necessário usar o background para definir a cor por se tratar de uma caixa */
+	margin: 10px auto; /* alinhando ao centro com o auto*/
+}
+
+/* Fim Introdução */
+
+/*  Introdução que será usada nas demais páginas */
+
+.introducao_interna {
+	width: 100%;
+	margin-top: 72px;
+	height: 160px;
+	text-align: center;
+	
+	/*
+	width: 100%;
+	height: 220px;
+	background: url(../img/bg-footer.jpg) no-repeat center; /* imagem de background utilizada para quebra */
+	/*padding-top: 40px;
+	text-align: center;
+	background-size: cover; /* cobre toda a área de fundo sendo redimensionada a imagem para ter o menor tamanho
+								serviria para reajustar a imagem caso estivesse em um tamanho maior, porém a imagem já está no tamanho ideal */
+	/**/
+}
+
+.introducao_interna h1 {
+	font-size: 36px;
+	line-height: 40px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff;
+	padding-top: 45px;
+}
+
+.introducao_interna h1:after {
+	 /* será utilizado o after e o before para criar os espaçadores do site, essas pseudo classes before e after criam os elemento inline por padrão */
+	content: ""; /*necessário, pois é isso que irá permitir exibir o espaçador na tela, sem ele não apareceria o conteúdo*/
+	display: block; /* necessário para que seja realizado a quebra de linha igual o block da div */
+	width: 60px;
+	height: 3px;
+	background: #fff; /* necessário usar o background para definir a cor por se tratar de uma caixa */
+	margin: 0px auto; /* alinhado ao centro */
+	margin-bottom: 10px;
+}
+
+/* Fim da Introdução das outras páginas */
+
+
+/* Produtos */
+
+.produtos {
+	padding-top: 60px;
+	text-align: center; /* alinhando tudo da section produtos ao centro */
+}
+
+.produtos_lista li {
+	background: #fec63e; /* cor de fundo amarelo */
+}
+
+.produtos_lista li img {
+	margin: 0 auto; /* alinhando imagem do ícone ao centro */
+}
+
+.icone {
+	background-color: #000; /* cor de fundo preta*/
+	padding: 30px; /* preenchimento de todos os lados em cima, direita, baixo e esquerda */
+}
+
+.produtos_lista li h3 {
+	font-size: 18px;
+	line-height: 25px;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #000;
+	margin-top: 10px;
+}
+
+.produtos_lista li h3:after {
+	content: ""; /*necessário, pois é isso que irá permitir exibir o espaçador na tela, sem ele não apareceria o conteúdo*/
+	display: block; /* necessário para que seja realizado a quebra de linha igual o block da div */
+	width: 60px; 
+	height: 3px; 
+	background: #000; /* necessário usar o background para definir a cor por se tratar de uma caixa */
+	margin: 3px auto; /* margem e alinhando ao centro com o auto do espaçador*/
+}
+
+.produtos_lista li p {
+	color: #000; /* alterando a cor para preto, pois em classes gerais está definido como padrão para cor branca todo p */
+	padding: 10px 20px 20px 20px;
+}
+
+.acao p {
+	color: #000;
+	font-size: 14px;
+	line-height: 20px;
+	margin-bottom: 20px;
+}
+
+.acao {
+	clear: both; /* as caixas que estão flutuando a esquerda foram limpadas a propriedade de flutuar, para conseguir fazer a quebra de linha */
+	margin-top: 40px;
+	margin-bottom: 60px;
+	display: inline-block; /* colocando para poder quebrar linha, pois a tag a, por padrão é inline  */
+}
+
+/* Fim Produtos */
+
+/* Portfólio */
+
+.portfolio {
+	width: 100%;
+	background-color: #000;
+	text-align: center;
+	padding-top: 40px;
+}
+
+.portfolio .sub_titulo {
+	color: #fec63e;
+}
+
+.portfolio .sub_titulo:after {
+	background: #fec63e; /* necessário usar o background para definir a cor por se tratar de uma caixa */
+}
+
+.portfolio .acao p {
+	color: #fff;
+}
+
+.portfolio .acao { /* alterando a margi */
+	margin-top: 40px;
+	margin-bottom: 53px;
+}
+
+.portfolio_lista li:last-child {
+	margin-top: 20px;
+}
+
+/* Fim do portfólio */
+
+/* Qualidade */
+
+.qualidade {
+	text-align: center;
+	padding-top: 60px;
+}
+
+.qualidade:after { /* será adicionado a imagem das linhas */
+	content: ""; /* todo pseudo elemento after, precisa ter um conteúdo */
+	display: block; /* elemento com quebra de linha */
+	width: 620px;
+	height: 83px;
+	background: url(../img/lines.png) no-repeat center;
+	position: absolute; /* é absoluto ao container que está definido como relativa, por isso que ele fica só na parte de qualidade, 
+	se o container não estiver como relative iria para o topo da página*/
+	top: 205px;
+	right: 169px;
+	z-index: -1; /* sempre irá ficar por trás de todos os elementos da tela */
+}
+
+.qualidade_lista {
+	padding-top: 20px;
+}
+
+.qualidade img {
+	margin: 0 auto; /* para centralizar a imagem */
+}
+
+.qualidade_lista li {
+	padding: 0 40px; /* espaço para os lados para o texto não ficar grudado */
+}
+
+.qualidade_lista li h3 {
+	font-size: 18px;
+	line-height: 25px;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #000;
+	margin-top: 10px;
+}
+
+.qualidade_lista li h3:after {
+	content: ""; /*necessário, pois é isso que irá permitir exibir o espaçador na tela, sem ele não apareceria o conteúdo*/
+	display: block; /* necessário para que seja realizado a quebra de linha igual o block da div */
+	width: 60px; 
+	height: 3px; 
+	background: #000; /* necessário usar o background para definir a cor por se tratar de uma caixa */
+	margin: 6px auto; /* margem e alinhando ao centro com o auto do espaçador*/
+}
+
+.qualidade_lista p {
+	color: #000;
+}
+
+/* Fim Qualidade */
+
+/* Quebra */
+
+.quebra {
+	width: 100%;
+	height: 220px;
+	background: url(../img/bg-footer.jpg) no-repeat center; /* imagem de background utilizada para quebra */
+	padding-top: 40px;
+	text-align: center;
+	background-size: cover; /* cobre toda a área de fundo sendo redimensionada a imagem para ter o menor tamanho
+								serviria para reajustar a imagem caso estivesse em um tamanho maior, porém a imagem já está no tamanho ideal */
+}
+
+.quebra .citacao_externa {
+	max-width: 400px; /* definindo tamanho máximo da largura */
+
+}
+
+/* Fim Quebra */
+
+/* Rodapé */
+
+.rodape {
+	width: 100%;
+	background: #000;
+	color:#fff;
+	padding: 20px;
+}
+
+.rodape h3 {
+	font-size: 18px;
+	line-height: 25px;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #fec63e;
+}
+
+.rodape h3:after {
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background: #fec63e;
+	margin: 6px 0px 12px 0px;
+}
+
+.rodape_historia {
+	padding-right: 40px; /* para ocorrer a quebra do texto e não ficar grudado com o outro */
+}
+
+.rodape_contato {
+	font-family: Georgia, "Times New Roman", serif; /* caso não tiver uma fonte, bucas a outra na máquina */
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.rodape_redes li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.rodape_redes li a {
+	border: 4px solid #fec63e;
+	padding: 10px;
+	display: block; /* para que tenha a quebra de linha na tag a que por padrão é inline */
+	transition: all ease; /* criando uma transição de tudo com um efeito mais suave, quando a pessoa passar o mouse em cima do menu */
+}
+
+.rodape_redes li a:hover {
+	border-color: #fff;
+}
+
+.copy {
+	width: 100%;
+	background-color: #fec63e;
+	padding: 20px 0;
+}
+
+.copy p {
+	color: #000;
+}
+
+/* Fim do Rodapé */
+
+/* Fim Style */
+
+/* Sobre */
+
+/* Introdução */
+
+.introducao_sobre {
+	background: url(../img/about/bg-about.jpg) no-repeat center;
+	background-size: cover; /* sem isso a imagem não irá ocupar todos os 1400px da tela, ficando um espaço em branco, essa propriedade para ser reconhecida precisar estar onde está sendo definido a url da imagem, ou seja, pegando a imagem, isso é necessário, pois o container têm 940px e a imagem está dentro do container, então para ela preencher a tela toda é necessário colocar essa propriedade que diz que a imagem irá preencher toda a tela */
+}
+
+.sobre {
+	padding-top: 60px;
+}
+
+.bicicletas {
+	padding-top: 20px;
+}
+
+.sobre p {
+	font-size: 18px;
+	line-height: 25px;
+	color: #000;
+	margin-bottom: 1em; /* para que tenha um espaço entre os dois parágrafos, multiplica o valor do em pelo tamanho da fonte, no caso 1 x 18 */
+	padding-right: 60px; /* para que ocorra a quebra do texto e não fique grudado o texto */
+}
+
+.sobre ul li {
+	font-family: Georgia, "Times New Roman", serif; /* caso não tiver uma fonte, bucas a outra na máquina */
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.qualidade_lista {
+	padding-bottom: 170px;
+}
+
+/* Fim Sobre */
+
+/* Produtos */
+
+/* Introdução */
+
+.introducao_produtos {
+	background: url(../img/products/bg-products.jpg) no-repeat center;
+	background-size: cover; /* sem isso a imagem não irá ocupar todos os 1400px da tela, ficando um espaço em branco, essa propriedade para ser reconhecida precisar estar onde está sendo definido a url da imagem, ou seja, pegando a imagem, isso é necessário, pois o container têm 940px e a imagem está dentro do container, então para ela preencher a tela toda é necessário colocar essa propriedade que diz que a imagem irá preencher toda a tela */
+}
+
+/* Fim Introdução */
+
+/* Produtos */
+
+
+.lista_produtos {
+	padding-top: 60px;
+}
+
+.lista_produtos h2 {
+	font-size: 36px;
+	line-height: 60px;
+	letter-spacing: .1em;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	position: relative; /* não muda a posição, pois fica em relação a ele mesmo a posição */
+	top: -170px; /* é possível alterar a posição usando em negativos os px, mas ele ainda está na tela e os outros elementos html o reconhecem na tela */
+	margin-bottom: -46px;
+}
+
+.lista_produtos h2:after, .lista_produtos h2:before {
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background: #fff;
+	margin: 0px auto;
+}
+
+.produto_icone {
+	background: #000;
+	padding: 70px 0;
+}
+
+.produto_icone img {
+	margin: 0 auto; /* alinhando foto ao centro */
+}
+
+.produto_qualidades {
+	background: #000;
+}
+
+.produto_qualidades p {
+	padding: 20px 60px;
+	font-family: Georgia, "Times New Roman", serif; /*caso não tiver uma fonte, bucas a outra na máquina */
+	font-size: 18px;
+	line-height: 25px;
+	color: #fff;
+	height: 180px;
+	margin-top: 2px;
+}
+
+.produto_qualidades ul li {
+	color: #000;
+	background: #fec63e;
+	font-size: 18px;
+	line-height: 25px;
+	text-transform: uppercase;
+	font-weight: bold;
+	float: left; /* para que os elementos flutuem a esquerda e mantenham a ordem certa da lista  */
+	width: 227px; /* definindo tamanho para que ocorra a quebra dos elementos */
+	height: 47px;
+	text-align: center;
+	padding-top: 12px;
+}
+
+.produto_qualidades ul li:nth-child(even) { /* seleciona todos os elementos pares da lista */
+	margin-left: 2px; /* criando margem para que seja criado a linha */
+}
+
+.produto_qualidades ul li:nth-child(1), .produto_qualidades ul li:nth-child(2) { /* seleciona primeiro elemento e segundo elemento da lista */
+	margin-bottom: 2px; /* criando margem para que seja criado a linha */
+}
+
+
+.produto_qualidades ul li:nth-child(odd) { /* seleciona todos os elementos ímpares da lista */
+	margin-left: 2px; /* criando margem para que seja criado a linha */
+}
+
+.produto_qualidades ul li:nth-child(3), .passeio_qualidades ul li:nth-child(4) { /* seleciona 3 e 4 elemento da lista */
+	margin-bottom: 2px; /* criando margem para que seja criado a linha */
+}
+
+/* Fim Produtos */
+
+/* Formulário */
+
+.orcamento {
+	background: #000;
+	width: 100%;
+	margin-top: 60px; /* margem para separar os conteúdos */
+	padding-bottom: 40px; /* utilizado o padding, pois ele preenche e não têm mudança na cor de fundo */
+}
+
+.orcamento .sub_titulo { /* alterando o design do sub_titulo padrão */
+	padding-top: 40px;
+	color: #fec63e;
+	text-align: center;
+	margin: 0;
+}
+
+.orcamento .sub_titulo:after {
+	background: #fec63e;
+	margin-bottom: 40px;
+}
+
+.formulario {
+	padding-right: 60px;
+}
+
+.formulario label {
+	display: block; /* quebra de linha */
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 18px;
+	line-height: 30px;
+	color: #fff;
+	margin-bottom: 5px;
+}
+
+.formulario input {
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 14px;
+	outline: none; /* propriedade que fica como se a caixa estivesse selecionada dentro, ficando uma cor de fundo azul, removendo essa proprieda para ajustar o visual */
+	background: none; /* tirando a cor de fundo dos input */
+	color: #fff;
+	width: 100%;
+	border: 3px solid #fec63e;
+	padding: 8px 10px;
+	margin-bottom: 10px;
+}	
+
+.formulario textarea {
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 14px;
+	outline: none; /* propriedade que fica como se a caixa estivesse selecionada dentro, ficando uma cor de fundo azul, removendo essa proprieda para ajustar o visual */
+	background: none; /* tirando a cor de fundo dos input */
+	color: #fff;
+	width: 100%;
+	height: 140px;
+	border: 3px solid #fec63e;
+	padding: 8px 10px;
+	margin-bottom: 10px;
+
+	resize: none; /* desabilitando opção que permite aumentar o tamanho do textarea */
+}	
+
+.formulario button {
+	margin-top: 20px;
+	margin: auto;
+	padding: 10px 40px; /* como o padding é igual para ambos os lados, automaticamente o texto é centralizado */
+	background: none;
+	text-align: center;
+}
+
+.dados h3 {
+	font-size: 18px;
+	line-height: 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #fec63e;
+}
+
+.dados span {
+	display: block; /* para quebrar a linha do conteúdo, span por padrão é inline */
+	color: #fff;
+	font-size: 18px;
+	line-height: 30px;
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+.dados span:nth-of-type(2) { /* pega o segundo elemento que é spam e aplica o estilo desejado, no caso uma margem para baixo*/
+	margin-bottom: 40px;
+}
+
+.dados p {
+	font-family: Georgia, "Times New Roman", serif;
+	color: #fff;
+	font-size: 14px;
+	line-height: 30px;
+}
+
+.dados ul li {
+	font-family: Georgia, "Times New Roman", serif;
+	color: #fff;
+	font-size: 14px;
+	line-height: 30px;
+	padding: 0px 10px; /* preenchimento para o lado, para dar o efeito de um tab no texto */
+}
+
+.dados ul li:nth-child(odd) { /* seleciona todos os elementos ímpares da lista */
+	color: #fec63e;
+}
+
+/* Fim Formulário */
+
+/* Fim Produtos */
+
+/* Portfólio */
+
+/* Introdução */
+
+.introducao_portfolio {
+	background: url(../img/portfolio/bg-portfolio.jpg) no-repeat center;
+	background-size: cover; /* sem isso a imagem não irá ocupar todos os 1400px da tela, ficando um espaço em branco, essa propriedade para ser reconhecida precisar estar onde está sendo definido a url da imagem, ou seja, pegando a imagem, isso é necessário, pois o container têm 940px e a imagem está dentro do container, então para ela preencher a tela toda é necessário colocar essa propriedade que diz que a imagem irá preencher toda a tela */
+}
+
+/* Fim Introdução */
+
+/* Portfólio */
+
+.portfolio {
+	padding-bottom: 40px; /* dando um espaço entre o portfólio e a quebra */
+}
+
+/* Fim Portfólio */
+
+/* Elogios */
+
+.elogios {
+	padding-top: 40px; /* usando padding, pois será usado margin para alinhar ao centro */
+	margin: 0 auto; /* centralizando texto no centro da tela */
+	max-width: 400px; /* conteúdo maximo de largura permitido na parte de elogios */
+}
+
+.elogios p {
+	font-family: Georgia, "Times New Roman", serif;
+	color: #000; /* alterando cor para preta, pois por padrão o p está como branco no style.css */
+	font-size: 18px;
+	line-height: 25px;
+	font-style: italic;
+	text-align: center; /* sempre o texto será centralizado na tela */
+	margin-bottom: 20px; /* separando o elogio do nome do cliente */
+}
+
+.elogios cite {
+	color: #000; /* alterando para preto, pois no css style a tag cite está como branca */
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: normal;
+	text-transform: none;
+	text-align: right;
+	float: right;
+	margin-bottom: 60px; /* separando nome do cliente do portfólio */
+}
+
+/* Fim Elogios */
+
+/* Fim Portfólio */
+
+/* Contato */
+
+/* Introdução */
+
+.introducao_contato {
+	background: url(../img/contact/bg-contact.jpg) no-repeat center;
+	background-size: cover; /* sem isso a imagem não irá ocupar todos os 1400px da tela, ficando um espaço em branco, essa propriedade para ser reconhecida precisar estar onde está sendo definido a url da imagem, ou seja, pegando a imagem, isso é necessário, pois o container têm 940px e a imagem está dentro do container, então para ela preencher a tela toda é necessário colocar essa propriedade que diz que a imagem irá preencher toda a tela */
+}
+
+/* Fim Introdução */
+
+/* Formulário */
+
+.contato {
+	/*background: #000;*/
+	width: 100%;
+	margin-top: 60px; /* margem para separar os conteúdos */
+	padding-bottom: 40px; /* utilizado o padding, pois ele preenche e não têm mudança na cor de fundo */
+}
+
+.contato .sub_titulo { /* alterando o design do sub_titulo padrão */
+	padding-top: 40px;
+	color: #fec63e;
+	text-align: center;
+	margin: 0;
+}
+
+.contato .sub_titulo:after {
+	background: #fec63e;
+	margin-bottom: 40px;
+}
+
+.formulario_contato {
+	padding-right: 60px;
+}
+
+.formulario_contato label {
+	display: block; /* quebra de linha */
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 18px;
+	line-height: 30px;
+	color: #000;
+	margin-bottom: 5px;
+}
+
+.formulario_contato input {
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 14px;
+	outline: none; /* propriedade que fica como se a caixa estivesse selecionada dentro, ficando uma cor de fundo azul, removendo essa proprieda para ajustar o visual */
+	background: none; /* tirando a cor de fundo dos input */
+	color: #000;
+	width: 100%;
+	border: 3px solid #000;
+	padding: 8px 10px;
+	margin-bottom: 10px;
+}	
+
+.formulario_contato textarea {
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 14px;
+	outline: none; /* propriedade que fica como se a caixa estivesse selecionada dentro, ficando uma cor de fundo azul, removendo essa proprieda para ajustar o visual */
+	background: none; /* tirando a cor de fundo dos input */
+	color: #000;
+	width: 100%;
+	height: 140px;
+	border: 3px solid #000;
+	padding: 8px 10px;
+	margin-bottom: 10px;
+
+	resize: none; /* desabilitando opção que permite aumentar o tamanho do textarea */
+}	
+
+.formulario_contato button {
+	margin-top: 20px;
+	margin: 0 auto;
+	padding: 10px 40px; /* como o padding é igual para ambos os lados, automaticamente o texto é centralizado */
+	background: none;
+	text-align: center;
+	border-color: #000;
+	color: #000;
+}
+
+.formulario_contato button:hover { /* ação de passar o mouse por cima do botão */
+	border-color: #fec63e;
+	color: #fec63e;
+}
+
+.dados_contato h3 {
+	font-size: 18px;
+	line-height: 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #000;
+}
+
+.dados_contato h3:after {
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background: #000;
+	margin-bottom: 10px;
+}
+
+.dados_contato span {
+	display: block; /* para quebrar a linha do conteúdo, span por padrão é inline */
+	color: #000;
+	font-size: 18px;
+	line-height: 30px;
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+.dados_contato span:nth-of-type(even) { /* pega todos os elementos pares que é spam e aplica o estilo desejado, no caso uma margem para baixo*/
+	margin-bottom: 40px;
+}
+
+.dados_contato p {
+	font-family: Georgia, "Times New Roman", serif;
+	color: #fff;
+	font-size: 14px;
+	line-height: 30px;
+}
+
+.dados_contato ul li {
+	font-family: Georgia, "Times New Roman", serif;
+	color: #fff;
+	font-size: 14px;
+	line-height: 30px;
+	/*padding: 0px 10px; /* preenchimento para o lado, para dar o efeito de um tab no texto */
+}
+
+.dados_contato ul li:nth-child(odd) { /* seleciona todos os elementos ímpares da lista */
+	color: #fec63e;
+}
+
+.contato_redes li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.contato_redes li a {
+	border: 4px solid #000;
+	padding: 7px;
+	display: block; /* para que tenha a quebra de linha na tag a que por padrão é inline */
+	transition: all ease; /* criando uma transição de tudo com um efeito mais suave, quando a pessoa passar o mouse em cima do menu */
+}
+
+.contato_redes li a:hover {
+	border-color: #fec63e;
+}
+
+/* Fim Formulário */
+
+/* Mapa */
+
+.mapa {
+	margin-bottom: 60px;
+}
+
+/* Fim Mapa */
+
+/* Fim Contato */
+
+/* Responsivo */
+
+/* Iniciando design responsivo */
+
+/* Dispositivos com tamanho de tela de tablets */
+@media only screen and (min-width: 818px) and (max-width: 999px) {
+
+	/* Qualidade Home */
+
+	.qualidade:after { /* será adicionado a imagem das linhas */
+		right: 73px; /* arrumando a posição das linhas para ficar melhor nas telas de tablet */
+	}
+
+	.qualidade_lista li {
+		padding: 0 10px; /* espaço para os lados das qualidades para que o texto não fique grudado */
+	}
+
+	/* Fim da Adpatação da parte de Qualidade da Home */
+
+	/* Produtos */
+
+	.lista_produtos h2 {
+		top: -140px; /* é possível alterar a posição usando em negativos os px, mas ele ainda está na tela e os outros elementos html o reconhecem na tela */
+		margin-bottom: -46px;
+	}
+
+	.produto_icone {
+		padding: 41px 0;
+	}
+
+	.produto_qualidades p {
+		padding: 20px 30px;
+		font-size: 14px; /* diminuindo a fonte para ficar melhor a visualização */
+		line-height: 20px;
+		height: 121px; /* diminuindo o tamanho para ficar alinhado a imagem */
+		margin: 0px; /* tiando a margem para não ficar desalinhado */
+	}
+
+	.produto_qualidades ul li {
+		width: 179px; /* definindo tamanho para que ocorra a quebra dos elementos */
+		height: 48px;
+	}
+
+	/* Fim adaptação Produtos */
+
+
+	/* Rodapé Redes Sociais */
+
+	.rodape_redes li {
+		margin-right: 6px; /* diminuindo espaçamento entre os ícones das redes sociais para ficarem na mesma linha */
+	}
+
+
+	.rodape_redes li a {
+		padding: 6px; /* preenchimento de todos os lados que os ícones irão ganhar dentro da caixa que estão */
+	}
+
+	.rodape_redes li a img { /* diminuindo tamanho da imagem das redes sociais no rodapé para que não haja uma quebra de linha e elas fiquem uma do lado da outra */
+		width: 26px;
+		height: 26px;
+	}
+
+	/* Fim da adaptação do Rodapé Redes Sociais */
+
+
+
+}
+
+/* Fim de Dispositivos com tamanho de tela de tablets */
+
+
+/* Design para celulares */
+
+@media only screen and (max-width: 817px) {
+
+	/* Classes Gerais */
+
+	.sub_titulo {
+		font-size: 24px;
+		line-height: 30px;
+		letter-spacing: .1em;
+		text-transform: uppercase;
+		font-weight: bold;
+		margin-bottom: 20px;
+	}
+
+	.subtitulo_interno {
+		font-size: 24px;
+		line-height: 30px;
+		letter-spacing: .1em;
+		text-transform: uppercase;
+		font-weight: bold;
+		margin-bottom: 20px;
+	}
+
+
+	/* Fim das classes Gerais */
+
+
+	/* Cabeçalho */
+
+	.cabecalho {
+		position: relative; /* o cabeçalho não precisa mais ser fixo, devido a limitação do tamanho da tela */
+		padding-top: 20px; /* distância para não ficar colado o logo no topo da página */
+		margin: 0px;
+		padding-bottom: 0px;
+	}
+
+	.cabecalho img {
+		/*padding: 20px;*/
+		margin: 0 auto 10px auto; /* centralizando imagem e colocando uma margem de 20px abaixo da imagem*/
+
+	}
+
+	.menu ul {
+		text-align: center;
+		/*margin-bottom: 20px;*/
+	}
+	
+	.menu ul li {
+		margin: 5px; /* colocando uma distância entre as opções do menu */
+ 	}
+
+	.menu ul li a {
+		width: 130px; /* tamanho de cada caixa do menu */
+		/*padding: 0px;*/
+		border: 4px solid #000;
+		display: block; /* cada elemento irá quebra linha */
+		float: left; /* colocando para flutuarem a esquerda, assim será possível ficar um do lado do outro */
+		/*line-height: 0px; /* altura da linha distância de um texto para o texto debaixo*/
+		/*letter-spacing: normal;*/
+	}
+
+	.menu ul li a.menu_selecionado { /* mudando a cor da opção do menu selecionada, necessário estar mais específica, pois se não estiver o browser irá considerar a instrução acima, pois é mais específica */
+		border-color: #fff; /* alterando cor da borda para branco */
+	}
+
+	/* Fim do Cabeçalho */
+
+	/* Introdução Home */
+
+	h1 { /* padrão utilizado nos títulos h1 do site */
+		font-size: 36px;
+		/* line-height: 60px; */
+		text-transform: uppercase;
+		font-weight: bold;
+		color: #fff;
+	}
+
+	.introducao {
+		margin-top: 0px; /* tirando a margem do topo para que a imagem fique colada no menu */
+		padding-top: 30px; /* preenchimento de 40px no topo para separar o texto da borda da imagem */
+		background: url("../img/bg-home-mobile.jpg") no-repeat center; /* imagem de fundo que não se repete e alinhada ao centro */
+		background-size: cover; /* cobre toda a área de fundo sendo redimensionada a imagem para ter o menor tamanho
+								serviria para reajustar a imagem caso estivesse em um tamanho maior, porém a imagem já está no tamanho ideal */
+
+	}
+
+	/* Fim Introdução */
+
+	/*  Introdução que será usada nas demais páginas */
+
+	.introducao_interna {
+		margin-top: 0px; /* tirando a margem, pois o menu já não é mais fixo */
+	}
+
+	/* Fim Introdução que será usada nas demais páginas */
+
+
+	/* Produtos Home */
+
+	.produtos {
+		padding-top: 40px;
+	}
+
+	/* Fim Produtos Home */
+
+	/* Qualidade Home */
+
+	.qualidade {
+		padding-top: 40px;
+	}
+
+	.qualidade:after { /* será adicionado a imagem das linhas */
+		display: none; /* tirando todos os efeitos, pois a linha não irá ter como ser exebida no celular devido a limitação de tamanho da tela */
+	}
+
+	.qualidade .acao {
+		margin-top: 0px; /* tirando a margem do botão para cima para não ficar tão distante do conteúdo no celular */
+	}
+	
+	/* Fim Qualidade Home */
+
+	
+	/* Página Sobre */
+
+	.sobre p {
+		padding-right: 0px; /* para que ocorra a quebra do texto e não fique grudado o texto */
+	}
+
+	.qualidade_lista {
+		padding-bottom: 20px; /* diminuindo espaço da quebra para o conteúdo não ficar muito separada */
+	}
+
+	/* Fim da página Sobre */
+
+	/* Produtos */
+
+	.lista_produtos h2 {
+		top: -100px; /* é possível alterar a posição usando em negativos os px, mas ele ainda está na tela e os outros elementos html o reconhecem na tela */
+		margin-bottom: -68px;
+	}
+
+	.produto_icone {
+		padding: 41px 0;
+	}
+
+	.produto_qualidades p {
+		padding: 20px 30px;
+		font-size: 14px; /* diminuindo a fonte para ficar melhor a visualização */
+		line-height: 20px;
+		height: auto; /* o tamanho será de acordo com o texto */
+		margin: 0px; /* tiando a margem para não ficar desalinhado */
+	}
+
+	.produto_qualidades ul li {
+		width: 149px; /* definindo tamanho para que ocorra a quebra dos elementos */
+		height: 49px;
+		font-size: 14px;
+		line-height: 20px;
+		padding-top: 14px;
+	}
+
+	.produto_qualidades ul li:nth-child(odd) { /* seleciona todos os elementos ímpares da lista */
+		margin-left: 0px; /* tirando essa margem para conteúdo encaixar e ficar uma linha branca separando a lista */
+	}
+
+	/* Formulário */
+
+	.formulario {
+		padding-right: 0px; /* tirando espaçamento para o lado, para assim conseguir expandir para 100% */
+	}
+
+	/* Fim Formulário */
+
+	/* Fim adaptação Produtos */
+
+	/* Contato */
+
+	.contato {
+		padding-bottom: 0px;
+	}
+
+	.formulario_contato {
+		padding-right: 0px; /* sem o preenchimento as caixas de input do formulário irão se expandir ao máximo */
+	}
+
+	.dados_contato {
+		margin-bottom: 40px;
+	}
+
+	.mapa {
+		margin-bottom: 20px;
+	}
+
+	/*.contato_redes li a {
+		margin: 0;
+	}*/
+
+
+	/* Fim Contato */
+
+
+}
+
+/* Fim de Design para celulares */
+
+/* Fim do design responsivo */
+
+/* Fim Responsivo */
