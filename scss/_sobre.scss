@@ -1,0 +1,33 @@
+/* Introdução */
+
+.introducao_sobre {
+	background: url(../img/about/bg-about.jpg) no-repeat center;
+	background-size: cover; /* sem isso a imagem não irá ocupar todos os 1400px da tela, ficando um espaço em branco, essa propriedade para ser reconhecida precisar estar onde está sendo definido a url da imagem, ou seja, pegando a imagem, isso é necessário, pois o container têm 940px e a imagem está dentro do container, então para ela preencher a tela toda é necessário colocar essa propriedade que diz que a imagem irá preencher toda a tela */
+}
+
+.sobre {
+	padding-top: 60px;
+}
+
+.bicicletas {
+	padding-top: 20px;
+}
+
+.sobre p {
+	
+	color: $cor-secundaria;
+	margin-bottom: 1em; /* para que tenha um espaço entre os dois parágrafos, multiplica o valor do em pelo tamanho da fonte, no caso 1 x 18 */
+	padding-right: 60px; /* para que ocorra a quebra do texto e não fique grudado o texto */
+
+	@include tipo-1(18);
+}
+
+.sobre ul li {
+	
+	@include tipo-2(18);
+	line-height: 30px;
+}
+
+.qualidade_lista {
+	padding-bottom: 170px;
+}

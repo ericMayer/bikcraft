@@ -1,0 +1,50 @@
+/* Introdução */
+
+.introducao_portfolio {
+	background: url(../img/portfolio/bg-portfolio.jpg) no-repeat center;
+	background-size: cover; /* sem isso a imagem não irá ocupar todos os 1400px da tela, ficando um espaço em branco, essa propriedade para ser reconhecida precisar estar onde está sendo definido a url da imagem, ou seja, pegando a imagem, isso é necessário, pois o container têm 940px e a imagem está dentro do container, então para ela preencher a tela toda é necessário colocar essa propriedade que diz que a imagem irá preencher toda a tela */
+}
+
+/* Fim Introdução */
+
+/* Portfólio */
+
+.portfolio {
+	padding-bottom: 40px; /* dando um espaço entre o portfólio e a quebra */
+}
+
+/* Fim Portfólio */
+
+/* Elogios */
+
+.elogios {
+	padding-top: 40px; /* usando padding, pois será usado margin para alinhar ao centro */
+	margin: 0 auto; /* centralizando texto no centro da tela */
+	max-width: 400px; /* conteúdo maximo de largura permitido na parte de elogios */
+}
+
+.elogios p {
+	
+	color: $cor-secundaria; /* alterando cor para preta, pois por padrão o p está como branco no style.css */
+
+	font-style: italic;
+	text-align: center; /* sempre o texto será centralizado na tela */
+	margin-bottom: 20px; /* separando o elogio do nome do cliente */
+
+	@include tipo-2(18);
+}
+
+.elogios cite {
+	color: $cor-secundaria; /* alterando para preto, pois no css style a tag cite está como branca */
+	
+	font-weight: bold;
+	letter-spacing: normal;
+	text-transform: none;
+	text-align: right;
+	float: right;
+	margin-bottom: 60px; /* separando nome do cliente do portfólio */
+
+	@include tipo-1(18);
+}
+
+/* Fim Elogios */
