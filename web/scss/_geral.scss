@@ -7,29 +7,31 @@ body { /* colocado a fonte mais utilizada como padrão no body */
 }
 
 p { /* padrão dos parágrafos usados no site */ 
-	font-family: Georgia, "Times New Roman", serif; /* caso não tiver uma fonte, bucas a outra na máquina */
-	color: #fff;
-	font-size: 14px;
-	line-height: 20px;
+	
+	color: $cor-terciaria;
+	@include tipo-2(14);
 
 }
 
 h1 { /* padrão utilizado nos títulos h1 do site */
-	font-size: 48px;
+	
 	/* line-height: 60px; */
 	text-transform: uppercase;
 	font-weight: bold;
-	color: #fff;
+	color: $cor-terciaria;
+
+	@include tipo-1(48);
 }
 
 cite { /* padrão do estilo das citações do site */
-	font-size: 14px;
-	line-height: 20px;
+	
 	text-transform: uppercase;
 	font-style: normal;
 	font-weight: bold;
 	letter-spacing: .1em; /* espaçamento entre as letras */
-	color: #fff;
+	color: $cor-terciaria;
+
+	@include tipo-1(14);
 }
 
 img {
@@ -38,36 +40,38 @@ img {
 }
 
 .button { /*configuração padrão do botão que será usado no site */
-	border: 4px solid #fec63e; /* necessário definir o tipo da borda solida, pontilhada, etc, se não definir a borda não aparece */
+	border: 4px solid $cor-principal; /* necessário definir o tipo da borda solida, pontilhada, etc, se não definir a borda não aparece */
 	padding: 10px 30px; /* espaçamento do texto até a borda, isso irá aumentar o tamanho do botão ao tamanho ideal */
-	color: #fec63e;
+	color: $cor-principal;
 	font-weight: bold;
 	text-transform: uppercase;
-	font-size: 14px;
-	line-height: 20px;
+	
 	letter-spacing: .1em; /* espaçamento entre as letras padrão que será usado no site em títulos, botão, e nomes */
 	transition: all ease; /* criando uma transição de tudo com um efeito mais suave, quando a pessoa passar o mouse em cima do menu */
+
+	@include tipo-1(14);
 
 }
 
 .button:hover { /* quando passar o mouse por cima */
-	color: #fff;
-	border-color: #fff;
+	color: $cor-terciaria;
+	border-color: $cor-terciaria;
 }
 
 .button.button_preto:hover {
-	color: #000;
-	border-color: #000;
+	color: $cor-secundaria;
+	border-color: $cor-secundaria;
 
 }
 
 .sub_titulo {
-	font-size: 24px;
-	line-height: 30px;
+	
 	letter-spacing: .1em;
 	text-transform: uppercase;
 	font-weight: bold;
 	margin-bottom: 40px;
+
+	@include tipo-1(24);
 }
 
 .sub_titulo:after {
@@ -75,17 +79,18 @@ img {
 	display: block; /* necessário para que seja realizado a quebra de linha igual o block da div */
 	width: 60px; 
 	height: 3px; 
-	background: #000; /* necessário usar o background para definir a cor por se tratar de uma caixa */
+	background: $cor-secundaria; /* necessário usar o background para definir a cor por se tratar de uma caixa */
 	margin: 5px auto; /* margem e alinhando ao centro com o auto*/
 }
 
 .subtitulo_interno {
-	font-size: 24px;
-	line-height: 30px;
+	
 	letter-spacing: .1em;
 	text-transform: uppercase;
 	font-weight: bold;
 	margin-bottom: 20px;
+
+	@include tipo-1(24);
 }
 
 .subtitulo_interno:after {
@@ -93,7 +98,7 @@ img {
 	display: block; /* necessário para que seja realizado a quebra de linha igual o block da div */
 	width: 60px; 
 	height: 3px; 
-	background: #000; /* necessário usar o background para definir a cor por se tratar de uma caixa */
+	background: $cor-secundaria; /* necessário usar o background para definir a cor por se tratar de uma caixa */
 	margin: 5px 0px; /* margem e alinhando ao centro com o auto*/
 }
 
@@ -105,7 +110,7 @@ img {
 	position: fixed; /* fica fixo na tela */
 	top: 0; /* fica sempre no topo da página */
 	width: 100%;
-	background-color: #fec63e; /* amarelo */
+	background-color: $cor-principal; /* amarelo */
 	padding: 10px 0;
 	z-index: 10; /* posiciona esse elemento acima de tudo, necessário, pois têm vários elementos que têm position depois do cabeçalho */
 }
@@ -121,22 +126,24 @@ img {
 }
 
 .menu ul li a {
-	font-size: 14px;
+	
 	font-weight: bold; /* negrito */
 	text-transform: uppercase; /* transforma texto todo em maíusculo */
-	color: #000;
+	color: $cor-secundaria;
 	padding: 10px 0; /* espaço de seleção do menu de cada item */
 	letter-spacing: .1em; /* espaçamento entre as letras */
 	line-height: 20px; /* altura da linha distância de um texto para o texto debaixo*/
 	transition: all ease; /* criando uma transição de tudo com um efeito mais suave, quando a pessoa passar o mouse em cima do menu */
+
+	@include tipo-1(14);
 }
 
 .menu ul li a:hover { /* quando passa o mouse por cima */
-	color: #fff;
+	color: $cor-terciaria;
 }
 
 .menu ul li a.menu_selecionado { /* mudando a cor da opção do menu selecionada, necessário estar mais específica, pois se não estiver o browser irá considerar a instrução acima, pois é mais específica */
-	color: #fff;
+	color: $cor-terciaria;
 }
 
 /* Fim header */
@@ -174,7 +181,7 @@ img {
 	display: block; /* necessário para que seja realizado a quebra de linha igual o block da div */
 	width: 60px;
 	height: 3px;
-	background: #fff; /* necessário usar o background para definir a cor por se tratar de uma caixa */
+	background: $cor-terciaria; /* necessário usar o background para definir a cor por se tratar de uma caixa */
 	margin: 10px auto; /* alinhando ao centro com o auto*/
 }
 
@@ -200,12 +207,15 @@ img {
 }
 
 .introducao_interna h1 {
-	font-size: 36px;
-	line-height: 40px;
+	
+	
 	font-weight: bold;
 	text-transform: uppercase;
-	color: #fff;
+	color: $cor-terciaria;
 	padding-top: 45px;
+
+	@include tipo-1(36);
+	line-height: 40px;
 }
 
 .introducao_interna h1:after {
@@ -214,7 +224,7 @@ img {
 	display: block; /* necessário para que seja realizado a quebra de linha igual o block da div */
 	width: 60px;
 	height: 3px;
-	background: #fff; /* necessário usar o background para definir a cor por se tratar de uma caixa */
+	background: $cor-terciaria; /* necessário usar o background para definir a cor por se tratar de uma caixa */
 	margin: 0px auto; /* alinhado ao centro */
 	margin-bottom: 10px;
 }
@@ -230,7 +240,7 @@ img {
 }
 
 .produtos_lista li {
-	background: #fec63e; /* cor de fundo amarelo */
+	background: $cor-principal; /* cor de fundo amarelo */
 }
 
 .produtos_lista li img {
@@ -238,18 +248,19 @@ img {
 }
 
 .icone {
-	background-color: #000; /* cor de fundo preta*/
+	background-color: $cor-secundaria; /* cor de fundo preta*/
 	padding: 30px; /* preenchimento de todos os lados em cima, direita, baixo e esquerda */
 }
 
 .produtos_lista li h3 {
-	font-size: 18px;
-	line-height: 25px;
+	
 	letter-spacing: .1em;
 	text-transform: uppercase;
 	font-weight: bold;
-	color: #000;
+	color: $cor-secundaria;
 	margin-top: 10px;
+
+	@include tipo-1(18);
 }
 
 .produtos_lista li h3:after {
@@ -257,20 +268,20 @@ img {
 	display: block; /* necessário para que seja realizado a quebra de linha igual o block da div */
 	width: 60px; 
 	height: 3px; 
-	background: #000; /* necessário usar o background para definir a cor por se tratar de uma caixa */
+	background: $cor-secundaria; /* necessário usar o background para definir a cor por se tratar de uma caixa */
 	margin: 3px auto; /* margem e alinhando ao centro com o auto do espaçador*/
 }
 
 .produtos_lista li p {
-	color: #000; /* alterando a cor para preto, pois em classes gerais está definido como padrão para cor branca todo p */
+	color: $cor-secundaria; /* alterando a cor para preto, pois em classes gerais está definido como padrão para cor branca todo p */
 	padding: 10px 20px 20px 20px;
 }
 
 .acao p {
-	color: #000;
-	font-size: 14px;
-	line-height: 20px;
+	color: $cor-secundaria;
+	
 	margin-bottom: 20px;
+	@include tipo-1(14);
 }
 
 .acao {
@@ -286,21 +297,21 @@ img {
 
 .portfolio {
 	width: 100%;
-	background-color: #000;
+	background-color: $cor-secundaria;
 	text-align: center;
 	padding-top: 40px;
 }
 
 .portfolio .sub_titulo {
-	color: #fec63e;
+	color: $cor-principal;
 }
 
 .portfolio .sub_titulo:after {
-	background: #fec63e; /* necessário usar o background para definir a cor por se tratar de uma caixa */
+	background: $cor-principal; /* necessário usar o background para definir a cor por se tratar de uma caixa */
 }
 
 .portfolio .acao p {
-	color: #fff;
+	color: $cor-terciaria;
 }
 
 .portfolio .acao { /* alterando a margi */
@@ -347,13 +358,14 @@ img {
 }
 
 .qualidade_lista li h3 {
-	font-size: 18px;
-	line-height: 25px;
+	
 	letter-spacing: .1em;
 	text-transform: uppercase;
 	font-weight: bold;
-	color: #000;
+	color: $cor-secundaria;
 	margin-top: 10px;
+
+	@include tipo-1(18);
 }
 
 .qualidade_lista li h3:after {
@@ -361,12 +373,12 @@ img {
 	display: block; /* necessário para que seja realizado a quebra de linha igual o block da div */
 	width: 60px; 
 	height: 3px; 
-	background: #000; /* necessário usar o background para definir a cor por se tratar de uma caixa */
+	background: $cor-secundaria; /* necessário usar o background para definir a cor por se tratar de uma caixa */
 	margin: 6px auto; /* margem e alinhando ao centro com o auto do espaçador*/
 }
 
 .qualidade_lista p {
-	color: #000;
+	color: $cor-secundaria;
 }
 
 /* Fim Qualidade */
@@ -394,18 +406,19 @@ img {
 
 .rodape {
 	width: 100%;
-	background: #000;
-	color:#fff;
+	background: $cor-secundaria;
+	color:$cor-terciaria;
 	padding: 20px;
 }
 
 .rodape h3 {
-	font-size: 18px;
-	line-height: 25px;
+	
 	letter-spacing: .1em;
 	text-transform: uppercase;
 	font-weight: bold;
-	color: #fec63e;
+	color: $cor-principal;
+
+	@include tipo-1(18);
 }
 
 .rodape h3:after {
@@ -413,7 +426,7 @@ img {
 	display: block;
 	width: 60px;
 	height: 3px;
-	background: #fec63e;
+	background: $cor-principal;
 	margin: 6px 0px 12px 0px;
 }
 
@@ -422,9 +435,7 @@ img {
 }
 
 .rodape_contato {
-	font-family: Georgia, "Times New Roman", serif; /* caso não tiver uma fonte, bucas a outra na máquina */
-	font-size: 14px;
-	line-height: 20px;
+	@include tipo-2(14);
 }
 
 .rodape_redes li {
@@ -433,24 +444,24 @@ img {
 }
 
 .rodape_redes li a {
-	border: 4px solid #fec63e;
+	border: 4px solid $cor-principal;
 	padding: 10px;
 	display: block; /* para que tenha a quebra de linha na tag a que por padrão é inline */
 	transition: all ease; /* criando uma transição de tudo com um efeito mais suave, quando a pessoa passar o mouse em cima do menu */
 }
 
 .rodape_redes li a:hover {
-	border-color: #fff;
+	border-color: $cor-terciaria;
 }
 
 .copy {
 	width: 100%;
-	background-color: #fec63e;
+	background-color: $cor-principal;
 	padding: 20px 0;
 }
 
 .copy p {
-	color: #000;
+	color: $cor-secundaria;
 }
 
 /* Fim do Rodapé */

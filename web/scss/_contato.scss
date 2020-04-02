@@ -10,7 +10,7 @@
 /* Formulário */
 
 .contato {
-	/*background: #000;*/
+	/*background: $cor-secundaria;*/
 	width: 100%;
 	margin-top: 60px; /* margem para separar os conteúdos */
 	padding-bottom: 40px; /* utilizado o padding, pois ele preenche e não têm mudança na cor de fundo */
@@ -18,13 +18,13 @@
 
 .contato .sub_titulo { /* alterando o design do sub_titulo padrão */
 	padding-top: 40px;
-	color: #fec63e;
+	color: $cor-principal;
 	text-align: center;
 	margin: 0;
 }
 
 .contato .sub_titulo:after {
-	background: #fec63e;
+	background: $cor-principal;
 	margin-bottom: 40px;
 }
 
@@ -34,38 +34,42 @@
 
 .formulario_contato label {
 	display: block; /* quebra de linha */
-	font-family: Georgia, "Times New Roman", serif;
-	font-size: 18px;
-	line-height: 30px;
-	color: #000;
+	
+	
+	color: $cor-secundaria;
 	margin-bottom: 5px;
+
+	@include tipo-2(18);
+	line-height: 30px;
 }
 
 .formulario_contato input {
-	font-family: Georgia, "Times New Roman", serif;
-	font-size: 14px;
+	
 	outline: none; /* propriedade que fica como se a caixa estivesse selecionada dentro, ficando uma cor de fundo azul, removendo essa proprieda para ajustar o visual */
 	background: none; /* tirando a cor de fundo dos input */
-	color: #000;
+	color: $cor-secundaria;
 	width: 100%;
-	border: 3px solid #000;
+	border: 3px solid $cor-secundaria;
 	padding: 8px 10px;
 	margin-bottom: 10px;
+
+	@include tipo-2(14);
 }	
 
 .formulario_contato textarea {
-	font-family: Georgia, "Times New Roman", serif;
-	font-size: 14px;
+	
 	outline: none; /* propriedade que fica como se a caixa estivesse selecionada dentro, ficando uma cor de fundo azul, removendo essa proprieda para ajustar o visual */
 	background: none; /* tirando a cor de fundo dos input */
-	color: #000;
+	color: $cor-secundaria;
 	width: 100%;
 	height: 140px;
-	border: 3px solid #000;
+	border: 3px solid $cor-secundaria;
 	padding: 8px 10px;
 	margin-bottom: 10px;
 
 	resize: none; /* desabilitando opção que permite aumentar o tamanho do textarea */
+
+	@include tipo-2(14);
 }	
 
 .formulario_contato button {
@@ -74,21 +78,24 @@
 	padding: 10px 40px; /* como o padding é igual para ambos os lados, automaticamente o texto é centralizado */
 	background: none;
 	text-align: center;
-	border-color: #000;
-	color: #000;
+	border-color: $cor-secundaria;
+	color: $cor-secundaria;
 }
 
 .formulario_contato button:hover { /* ação de passar o mouse por cima do botão */
-	border-color: #fec63e;
-	color: #fec63e;
+	border-color: $cor-principal;
+	color: $cor-principal;
 }
 
 .dados_contato h3 {
-	font-size: 18px;
-	line-height: 30px;
+	
+	
 	text-transform: uppercase;
 	font-weight: bold;
-	color: #000;
+	color: $cor-secundaria;
+
+	@include tipo-1(18);
+	line-height: 30px;
 }
 
 .dados_contato h3:after {
@@ -96,16 +103,17 @@
 	display: block;
 	width: 60px;
 	height: 3px;
-	background: #000;
+	background: $cor-secundaria;
 	margin-bottom: 10px;
 }
 
 .dados_contato span {
 	display: block; /* para quebrar a linha do conteúdo, span por padrão é inline */
-	color: #000;
-	font-size: 18px;
+	color: $cor-secundaria;
+	
+	@include tipo-2(18);
 	line-height: 30px;
-	font-family: Georgia, "Times New Roman", serif;
+	
 }
 
 .dados_contato span:nth-of-type(even) { /* pega todos os elementos pares que é spam e aplica o estilo desejado, no caso uma margem para baixo*/
@@ -113,22 +121,23 @@
 }
 
 .dados_contato p {
-	font-family: Georgia, "Times New Roman", serif;
-	color: #fff;
-	font-size: 14px;
+	
+	color: $cor-terciaria;
+	
+	@include tipo-2(14);
 	line-height: 30px;
 }
 
 .dados_contato ul li {
-	font-family: Georgia, "Times New Roman", serif;
-	color: #fff;
-	font-size: 14px;
+	
+	color: $cor-terciaria;
+	@include tipo-2(14);
 	line-height: 30px;
 	/*padding: 0px 10px; /* preenchimento para o lado, para dar o efeito de um tab no texto */
 }
 
 .dados_contato ul li:nth-child(odd) { /* seleciona todos os elementos ímpares da lista */
-	color: #fec63e;
+	color: $cor-principal;
 }
 
 .contato_redes li {
@@ -137,14 +146,14 @@
 }
 
 .contato_redes li a {
-	border: 4px solid #000;
+	border: 4px solid $cor-secundaria;
 	padding: 7px;
 	display: block; /* para que tenha a quebra de linha na tag a que por padrão é inline */
 	transition: all ease; /* criando uma transição de tudo com um efeito mais suave, quando a pessoa passar o mouse em cima do menu */
 }
 
 .contato_redes li a:hover {
-	border-color: #fec63e;
+	border-color: $cor-principal;
 }
 
 /* Fim Formulário */

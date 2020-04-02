@@ -24,24 +24,27 @@
 }
 
 .elogios p {
-	font-family: Georgia, "Times New Roman", serif;
-	color: #000; /* alterando cor para preta, pois por padrão o p está como branco no style.css */
-	font-size: 18px;
-	line-height: 25px;
+	
+	color: $cor-secundaria; /* alterando cor para preta, pois por padrão o p está como branco no style.css */
+
 	font-style: italic;
 	text-align: center; /* sempre o texto será centralizado na tela */
 	margin-bottom: 20px; /* separando o elogio do nome do cliente */
+
+	@include tipo-2(18);
 }
 
 .elogios cite {
-	color: #000; /* alterando para preto, pois no css style a tag cite está como branca */
-	font-size: 18px;
+	color: $cor-secundaria; /* alterando para preto, pois no css style a tag cite está como branca */
+	
 	font-weight: bold;
 	letter-spacing: normal;
 	text-transform: none;
 	text-align: right;
 	float: right;
 	margin-bottom: 60px; /* separando nome do cliente do portfólio */
+
+	@include tipo-1(18);
 }
 
 /* Fim Elogios */

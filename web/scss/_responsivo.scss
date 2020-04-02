@@ -1,8 +1,8 @@
 /* Iniciando design responsivo */
 
 /* Dispositivos com tamanho de tela de tablets */
-@media only screen and (min-width: 818px) and (max-width: 999px) {
-
+@include d(t) {
+	// usando mixin do media query para tablet, o ideal seria adicionar em cada classe o mixin, porém como o projeto é apenas para aprendizado, não sera feito isso visto que o esforço será bem maior e demandará bem mais tempo
 	/* Qualidade Home */
 
 	.qualidade:after { /* será adicionado a imagem das linhas */
@@ -28,10 +28,11 @@
 
 	.produto_qualidades p {
 		padding: 20px 30px;
-		font-size: 14px; /* diminuindo a fonte para ficar melhor a visualização */
-		line-height: 20px;
+		
 		height: 121px; /* diminuindo o tamanho para ficar alinhado a imagem */
 		margin: 0px; /* tiando a margem para não ficar desalinhado */
+
+		@include tipo-1(14);
 	}
 
 	.produto_qualidades ul li {
@@ -69,26 +70,28 @@
 
 /* Design para celulares */
 
-@media only screen and (max-width: 817px) {
-
+@include d(m) {
+	// usando mixin do media query para mobile
 	/* Classes Gerais */
 
 	.sub_titulo {
-		font-size: 24px;
-		line-height: 30px;
+		
 		letter-spacing: .1em;
 		text-transform: uppercase;
 		font-weight: bold;
 		margin-bottom: 20px;
+
+		@include tipo-1(24);
 	}
 
 	.subtitulo_interno {
-		font-size: 24px;
-		line-height: 30px;
+		
 		letter-spacing: .1em;
 		text-transform: uppercase;
 		font-weight: bold;
 		margin-bottom: 20px;
+
+		@include tipo-1(24);
 	}
 
 
@@ -122,7 +125,7 @@
 	.menu ul li a {
 		width: 130px; /* tamanho de cada caixa do menu */
 		/*padding: 0px;*/
-		border: 4px solid #000;
+		border: 4px solid $cor-secundaria;
 		display: block; /* cada elemento irá quebra linha */
 		float: left; /* colocando para flutuarem a esquerda, assim será possível ficar um do lado do outro */
 		/*line-height: 0px; /* altura da linha distância de um texto para o texto debaixo*/
@@ -130,7 +133,7 @@
 	}
 
 	.menu ul li a.menu_selecionado { /* mudando a cor da opção do menu selecionada, necessário estar mais específica, pois se não estiver o browser irá considerar a instrução acima, pois é mais específica */
-		border-color: #fff; /* alterando cor da borda para branco */
+		border-color: $cor-terciaria; /* alterando cor da borda para branco */
 	}
 
 	/* Fim do Cabeçalho */
@@ -138,11 +141,13 @@
 	/* Introdução Home */
 
 	h1 { /* padrão utilizado nos títulos h1 do site */
-		font-size: 36px;
+		
 		/* line-height: 60px; */
 		text-transform: uppercase;
 		font-weight: bold;
-		color: #fff;
+		color: $cor-terciaria;
+
+		@include tipo-1(36);
 	}
 
 	.introducao {
@@ -215,18 +220,20 @@
 
 	.produto_qualidades p {
 		padding: 20px 30px;
-		font-size: 14px; /* diminuindo a fonte para ficar melhor a visualização */
-		line-height: 20px;
+		
 		height: auto; /* o tamanho será de acordo com o texto */
 		margin: 0px; /* tiando a margem para não ficar desalinhado */
+
+		@include tipo-1(14);
 	}
 
 	.produto_qualidades ul li {
 		width: 149px; /* definindo tamanho para que ocorra a quebra dos elementos */
 		height: 49px;
-		font-size: 14px;
-		line-height: 20px;
+		
 		padding-top: 14px;
+
+		@include tipo-1(14);
 	}
 
 	.produto_qualidades ul li:nth-child(odd) { /* seleciona todos os elementos ímpares da lista */

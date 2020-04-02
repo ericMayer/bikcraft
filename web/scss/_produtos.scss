@@ -15,16 +15,19 @@
 }
 
 .lista_produtos h2 {
-	font-size: 36px;
-	line-height: 60px;
+	
+	
 	letter-spacing: .1em;
-	color: #fff;
+	color: $cor-terciaria;
 	text-transform: uppercase;
 	font-weight: bold;
 	text-align: center;
 	position: relative; /* não muda a posição, pois fica em relação a ele mesmo a posição */
 	top: -170px; /* é possível alterar a posição usando em negativos os px, mas ele ainda está na tela e os outros elementos html o reconhecem na tela */
 	margin-bottom: -46px;
+
+	@include tipo-1(36);
+	line-height: 60px;
 }
 
 .lista_produtos h2:after, .lista_produtos h2:before {
@@ -32,12 +35,12 @@
 	display: block;
 	width: 60px;
 	height: 3px;
-	background: #fff;
+	background: $cor-terciaria;
 	margin: 0px auto;
 }
 
 .produto_icone {
-	background: #000;
+	background: $cor-secundaria;
 	padding: 70px 0;
 }
 
@@ -46,24 +49,24 @@
 }
 
 .produto_qualidades {
-	background: #000;
+	background: $cor-secundaria;
 }
 
 .produto_qualidades p {
 	padding: 20px 60px;
-	font-family: Georgia, "Times New Roman", serif; /*caso não tiver uma fonte, bucas a outra na máquina */
-	font-size: 18px;
-	line-height: 25px;
-	color: #fff;
+	
+	
+	color: $cor-terciaria;
 	height: 180px;
 	margin-top: 2px;
+
+	@include tipo-2(18);
 }
 
 .produto_qualidades ul li {
-	color: #000;
-	background: #fec63e;
-	font-size: 18px;
-	line-height: 25px;
+	color: $cor-secundaria;
+	background: $cor-principal;
+	
 	text-transform: uppercase;
 	font-weight: bold;
 	float: left; /* para que os elementos flutuem a esquerda e mantenham a ordem certa da lista  */
@@ -71,6 +74,8 @@
 	height: 47px;
 	text-align: center;
 	padding-top: 12px;
+
+	@include tipo-1(18);
 }
 
 .produto_qualidades ul li:nth-child(even) { /* seleciona todos os elementos pares da lista */
@@ -95,7 +100,7 @@
 /* Formulário */
 
 .orcamento {
-	background: #000;
+	background: $cor-secundaria;
 	width: 100%;
 	margin-top: 60px; /* margem para separar os conteúdos */
 	padding-bottom: 40px; /* utilizado o padding, pois ele preenche e não têm mudança na cor de fundo */
@@ -103,13 +108,13 @@
 
 .orcamento .sub_titulo { /* alterando o design do sub_titulo padrão */
 	padding-top: 40px;
-	color: #fec63e;
+	color: $cor-principal;
 	text-align: center;
 	margin: 0;
 }
 
 .orcamento .sub_titulo:after {
-	background: #fec63e;
+	background: $cor-principal;
 	margin-bottom: 40px;
 }
 
@@ -119,38 +124,43 @@
 
 .formulario label {
 	display: block; /* quebra de linha */
-	font-family: Georgia, "Times New Roman", serif;
-	font-size: 18px;
-	line-height: 30px;
-	color: #fff;
+	
+	
+	color: $cor-terciaria;
 	margin-bottom: 5px;
+
+	@include tipo-2(18);
+
+	line-height: 30px; /* para manter line height de 30px */
 }
 
 .formulario input {
-	font-family: Georgia, "Times New Roman", serif;
-	font-size: 14px;
+	
 	outline: none; /* propriedade que fica como se a caixa estivesse selecionada dentro, ficando uma cor de fundo azul, removendo essa proprieda para ajustar o visual */
 	background: none; /* tirando a cor de fundo dos input */
-	color: #fff;
+	color: $cor-terciaria;
 	width: 100%;
-	border: 3px solid #fec63e;
+	border: 3px solid $cor-principal;
 	padding: 8px 10px;
 	margin-bottom: 10px;
+
+	@include tipo-2(14);
 }	
 
 .formulario textarea {
-	font-family: Georgia, "Times New Roman", serif;
-	font-size: 14px;
+
 	outline: none; /* propriedade que fica como se a caixa estivesse selecionada dentro, ficando uma cor de fundo azul, removendo essa proprieda para ajustar o visual */
 	background: none; /* tirando a cor de fundo dos input */
-	color: #fff;
+	color: $cor-terciaria;
 	width: 100%;
 	height: 140px;
-	border: 3px solid #fec63e;
+	border: 3px solid $cor-principal;
 	padding: 8px 10px;
 	margin-bottom: 10px;
 
 	resize: none; /* desabilitando opção que permite aumentar o tamanho do textarea */
+
+	@include tipo-2(14);
 }	
 
 .formulario button {
@@ -162,19 +172,24 @@
 }
 
 .dados h3 {
-	font-size: 18px;
-	line-height: 30px;
+	
+	
 	text-transform: uppercase;
 	font-weight: bold;
-	color: #fec63e;
+	color: $cor-principal;
+	@include tipo-1(18);
+
+	line-height: 30px;
 }
 
 .dados span {
 	display: block; /* para quebrar a linha do conteúdo, span por padrão é inline */
-	color: #fff;
-	font-size: 18px;
+	color: $cor-terciaria;
+	
+	@include tipo-2(18);
+
 	line-height: 30px;
-	font-family: Georgia, "Times New Roman", serif;
+	
 }
 
 .dados span:nth-of-type(2) { /* pega o segundo elemento que é spam e aplica o estilo desejado, no caso uma margem para baixo*/
@@ -182,22 +197,26 @@
 }
 
 .dados p {
-	font-family: Georgia, "Times New Roman", serif;
-	color: #fff;
-	font-size: 14px;
+	
+	color: $cor-terciaria;
+	@include tipo-2(14);
 	line-height: 30px;
 }
 
 .dados ul li {
-	font-family: Georgia, "Times New Roman", serif;
-	color: #fff;
-	font-size: 14px;
-	line-height: 30px;
+
+	color: $cor-terciaria;
+	
+	
 	padding: 0px 10px; /* preenchimento para o lado, para dar o efeito de um tab no texto */
+
+	@include tipo-2(14);
+
+	line-height: 30px;
 }
 
 .dados ul li:nth-child(odd) { /* seleciona todos os elementos ímpares da lista */
-	color: #fec63e;
+	color: $cor-principal;
 }
 
 /* Fim Formulário */

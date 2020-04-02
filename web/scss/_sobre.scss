@@ -14,16 +14,17 @@
 }
 
 .sobre p {
-	font-size: 18px;
-	line-height: 25px;
-	color: #000;
+	
+	color: $cor-secundaria;
 	margin-bottom: 1em; /* para que tenha um espaço entre os dois parágrafos, multiplica o valor do em pelo tamanho da fonte, no caso 1 x 18 */
 	padding-right: 60px; /* para que ocorra a quebra do texto e não fique grudado o texto */
+
+	@include tipo-1(18);
 }
 
 .sobre ul li {
-	font-family: Georgia, "Times New Roman", serif; /* caso não tiver uma fonte, bucas a outra na máquina */
-	font-size: 18px;
+	
+	@include tipo-2(18);
 	line-height: 30px;
 }
 
